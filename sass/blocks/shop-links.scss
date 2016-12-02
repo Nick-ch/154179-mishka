@@ -6,6 +6,7 @@
 
 .shop-links__item {
   min-height: 100px;
+  padding: 0 30px;
   background: #63d1bb;
 }
 
@@ -26,5 +27,15 @@
 }
 
 .shop-link__text {
+
+}
+
+// Забыл как вставлять изображения через псевдоэлемент... :-/
+.shop-link__text--stuff-img::after {
+  position: absolute;
+  background: url("../../img/icon-interior.svg") no-repeat 50% 50%;
+}
+
+.shop-link__text--toys-img {
 
 }
