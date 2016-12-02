@@ -1,3 +1,9 @@
+
+
+@import "global.scss";
+@import "mixins.scss";
+@import "variables.scss";
+
 @import "blocks/about-us.scss";
 @import "blocks/btn.scss";
 @import "blocks/catalog-wrapper.scss";
@@ -16,10 +22,8 @@
 @import "blocks/social-btn.scss";
 @import "blocks/user-review.scss";
 @import "blocks/visually-hidden.scss";
-@import "global.scss";
-@import "mixins.scss";
-@import "variables.scss";
+
 
 body {
-  background: lightyellow;
+  background: lightblue;
 }

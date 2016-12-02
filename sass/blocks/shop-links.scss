@@ -1,0 +1,30 @@
+.shop-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shop-links__item {
+  min-height: 100px;
+  background: #63d1bb;
+}
+
+.shop-links__item--darker {
+  background: #56c3b2;
+}
+
+.shop-links__link {
+  display: block;
+  height: 100%;
+
+  text-decoration: none;
+  color: #fff;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 24px;
+
+}
+
+.shop-link__text {
+
+}
