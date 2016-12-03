@@ -30,10 +30,22 @@
   line-height: 24px;
 }
 
-.main-nav__search {
-
+.main-nav__search::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../../img/icon-search.svg);
+  background-repeat: no-repeat;
 }
 
-.main-nav__shop-cart {
-
+.main-nav__shop-cart::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  width: 21px;
+  height: 19px;
+  background-image: url(../../img/icon-cart.svg);
+  background-repeat: no-repeat;
 }

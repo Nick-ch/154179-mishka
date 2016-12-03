@@ -13,7 +13,15 @@
 }
 
 .page-footer__developer a {
+  font-size: 0;
   color: #63d1bb;
-  padding-left: 40px;
-  background: url(../../img/htmlacademy.svg) no-repeat ; // Переделать. Нужен какой-то другой способ вставки логотипа. Не меняет цвет от CSS (а должен?). Как вариант - поменять fill в svg-шке.
+}
+
+.page-footer__developer a::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url(../../img/htmlacademy.svg);
+  background-repeat: no-repeat;
 }

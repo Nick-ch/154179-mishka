@@ -30,12 +30,23 @@
 
 }
 
-// Забыл как вставлять изображения через псевдоэлемент... :-/
+
 .shop-link__text--stuff-img::after {
+  content: "";
   position: absolute;
-  background: url("../../img/icon-interior.svg") no-repeat 50% 50%;
+  right: 40px;
+  width: 41px;
+  height: 63px;
+  background-image: url(../../img/icon-interior.svg);
+  background-repeat: no-repeat;
 }
 
-.shop-link__text--toys-img {
-
+.shop-link__text--toys-img::after {
+  content: "";
+  position: absolute;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background-image: url(../../img/icon-toy.svg);
+  background-repeat: no-repeat;
 }

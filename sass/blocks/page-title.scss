@@ -8,5 +8,8 @@
 
 .page-title--index {
   min-height: 280px;
-  background: url(../../img/hero-mobile@1x.jpg) #fafafa no-repeat 50% 50%;
+  background-image: url(../../img/hero-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-color: #fafafa;
+  background-position: center;
 }
