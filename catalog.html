@@ -35,7 +35,7 @@
             </div>
           </div>
         </article>
-        <article class="product_card">
+        <article class="product-card">
           <a href="#" class="product-card__link"><img src="img/photo-2-mobile@1x.jpg" alt="Корзинка для белья"></a>
           <div class="product-card__wrapper-common">
             <h2 class="product-card__title"><a href="#" class="product-card__link">Корзинка для белья</a></h2>
@@ -46,7 +46,7 @@
             </div>
           </div>
         </article>
-        <article class="product_card">
+        <article class="product-card">
           <a href="#" class="product-card__link"><img src="img/photo-3-mobile@1x.jpg" alt="Большая корзинка для игрушек"></a>
           <div class="product-card__wrapper-common">
             <h2 class="product-card__title"><a href="#" class="product-card__link">Большая корзинка для игрушек</a></h2>
@@ -58,17 +58,21 @@
           </div>
         </article>
       </div>
-      <article class="production-process">
+      <article class="production-process"> <!-- Не очень мне нравиться решение с обертками в этом блоке. Вот вообще не очень... -->
         <div class="production-process__wrapper">
-          <h2 class="production-process__title">Процесс производства</h2>
+          <div class="production-process__inner-wrapper">
+            <h2 class="production-process__title">Процесс производства</h2>
+          </div>
           <figure class="production-process__video-container">
             <video src="#" class="production-process__video" width="260" height="150" poster="img/video-mobile@1x.jpg">
 
             </video>
             <span class="production-process__video-start"></span>
-            <figcaption class="production-process__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</figcaption>
+            <div class="production-process__inner-wrapper"> <!-- Пришлось заменить figcaption, т.к. валидатор ругается, когда видит его внутри дива -->
+              <p class="production-process__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+              <a href="form.html" class="btn btn--place-order">Сделать заказ</a> <!-- А паддинг снизу просто так не добавить у обертки - на заголовок подействует тогда. Может через псевдоклассы? -->
+            </div>
           </figure>
-          <a href="form.html" class="btn btn--place-order">Сделать заказ</a>
         </div>
       </article>
     </main>
