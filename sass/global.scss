@@ -1,3 +1,25 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("Open Sans"),
+    local("OpenSans"),
+    url(../fonts/opensans.woff),
+    url(../fonts/opensans.woff2);
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  src:
+    local("Open Sans"),
+    local("OpenSans"),
+    url(../fonts/opensansbold.woff),
+    url(../fonts/opensansbold.woff2);
+}
+
 body {
   margin: 0;
   font-family: "Open Sans", Arial, sans-serif;
