@@ -1,0 +1,41 @@
+.contacts {
+
+}
+
+.contacts__wrapper {
+  padding: 0 30px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.contacts__table {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #444444;
+}
+
+.contacts__table-email-row {
+
+}
+
+.contacts__email-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #444444;
+  border-bottom: 1px solid $mishka-green;
+}
+
+.contacts__table-tel-row {
+
+}
+
+.contacts__map {
+
+}

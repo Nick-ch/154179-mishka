@@ -1,0 +1,52 @@
+.shop-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shop-links__item {
+  min-height: 100px;
+  padding: 0 30px;
+  background: $mishka-green;
+}
+
+.shop-links__item--darker {
+  background: #56c3b2;
+}
+
+.shop-links__link {
+  display: block;
+  height: 100%;
+
+  text-decoration: none;
+  color: #fff;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 24px;
+
+}
+
+.shop-link__text {
+
+}
+
+
+.shop-link__text--stuff-img::after {
+  content: "";
+  position: absolute;
+  right: 40px;
+  width: 41px;
+  height: 63px;
+  background-image: url(../../img/icon-interior.svg);
+  background-repeat: no-repeat;
+}
+
+.shop-link__text--toys-img::after {
+  content: "";
+  position: absolute;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background-image: url(../../img/icon-toy.svg);
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,29 @@
+.page-footer {
+  padding: 0 30px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-footer__social-links {
+
+}
+
+.page-footer__developer {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.page-footer__developer a {
+  font-size: 0;
+  color: $mishka-green;
+}
+
+.page-footer__developer a::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url(../../img/htmlacademy.svg);
+  background-repeat: no-repeat;
+}
