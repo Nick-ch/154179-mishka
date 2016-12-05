@@ -3,19 +3,38 @@
   min-height: 78px;
 }
 
-.page-header__logo {
+.page-header__logo a {
+  display: block;
+  width: 100%;
+  height: 36px;
 
-  a {
-    display: block;
-    width: 100%;
-    height: 36px;
+  padding-top: 21px;
+  padding-bottom: 21px;
 
-    padding-top: 21px;
-    padding-bottom: 21px;
+  text-align: center;
 
-    text-align: center;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
 
-    border-top: 1px solid #ececec;
+@media ($tablet-widths) {
+  .page-header {
+    min-height: 88px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+
     border-bottom: 1px solid #ececec;
   }
+
+  .page-header__logo a {
+    float: left;
+    width: 86px;
+
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+    border: none;
+  }
 }
+
