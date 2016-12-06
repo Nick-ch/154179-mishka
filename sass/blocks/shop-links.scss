@@ -5,8 +5,7 @@
 }
 
 .shop-links__item {
-  min-height: 100px;
-  padding: 0 30px;
+  position: relative;
   background: $mishka-green;
 }
 
@@ -16,7 +15,7 @@
 
 .shop-links__link {
   display: block;
-  height: 100%;
+  padding: 30px;
 
   text-decoration: none;
   color: #fff;
@@ -27,26 +26,36 @@
 }
 
 .shop-link__text {
-
+  margin-right: 70px;
 }
 
 
 .shop-link__text--stuff-img::after {
   content: "";
   position: absolute;
-  right: 40px;
+  top: 50%;
+  right: 35px;
+  transform: translateY(-50%);
+
   width: 41px;
   height: 63px;
+
   background-image: url(../../img/icon-interior.svg);
   background-repeat: no-repeat;
+  opacity: 0.2; //По макету прозрачность 50% и стоит заливка цветом. Заливку сделать не получается (пробовал fill ставить и в CSS и внутри SVG - не работает). Подобрал прозрачность "на глаз".
 }
 
 .shop-link__text--toys-img::after {
   content: "";
   position: absolute;
-  right: 40px;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+
   width: 60px;
   height: 60px;
+
   background-image: url(../../img/icon-toy.svg);
   background-repeat: no-repeat;
+  opacity: 0.2;
 }
