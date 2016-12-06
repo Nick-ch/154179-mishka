@@ -1,5 +1,5 @@
 .main-nav {
-
+  @include clearfix;
 }
 
 .main-nav__toggle {
@@ -55,6 +55,7 @@
   height: 18px;
   background-image: url(../../img/icon-search.svg);
   background-repeat: no-repeat;
+  opacity: 0.2;
 }
 
 .main-nav__shop-cart::before {
@@ -65,6 +66,7 @@
   height: 19px;
   background-image: url(../../img/icon-cart.svg);
   background-repeat: no-repeat;
+  opacity: 0.2;
 }
 
 @media ($tablet-widths) {
