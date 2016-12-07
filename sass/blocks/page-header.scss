@@ -3,6 +3,10 @@
   min-height: 78px;
 }
 
+.page-header__logo {
+
+}
+
 .page-header__logo a {
   display: block;
   width: 100%;
@@ -38,3 +42,14 @@
   }
 }
 
+@media ($desktop-widths) {
+  .page-header {
+    text-align: center;
+    font-size: 0;
+  }
+
+  .page-header__logo {
+    display: inline-block;
+
+  }
+}
