@@ -22,13 +22,11 @@
   font-size: 19px;
   font-weight: bold;
   line-height: 24px;
-
 }
 
 .shop-link__text {
-  margin-right: 70px;
+  margin-right: 80px;
 }
-
 
 .shop-link__text--stuff-img::after {
   content: "";
@@ -58,4 +56,33 @@
   background-image: url(../../img/icon-toy.svg);
   background-repeat: no-repeat;
   opacity: 0.2;
+}
+
+@media ($tablet-widths) {
+  .shop-links {
+    display: table;
+
+    width: 668px;
+    margin: 0 auto;
+
+    font-size: 0;
+  }
+
+  .shop-links__item {
+    display: table-cell;
+    width: 50%;
+
+    vertical-align: middle;
+  }
+
+  .shop-links__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media ($desktop-widths) {
+  .shop-links {
+    width: 1050px;
+  }
 }
