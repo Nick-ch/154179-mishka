@@ -1,5 +1,7 @@
 .featured-product {
-
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 35px;
 }
 
 .featured-product__header {
@@ -7,12 +9,16 @@
 }
 
 .featured-product__title {
+  margin: 10px 0;
+
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
 }
 
 .featured-product__subtitle {
+  margin: 10px 0;
+
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
@@ -21,6 +27,9 @@
 }
 
 .featured-product__item-description {
+  margin-top: 25px;
+  margin-bottom: 25px;
+
   font-size: 15px;
   line-height: 24px;
   font-weight: normal;
@@ -28,10 +37,24 @@
 }
 
 .featured-product__characteristics {
+  border-collapse: collapse;
+  width: 100%;
+
+  margin-bottom: 28px;
+
   font-size: 15px;
   line-height: 20px;
   font-weight: normal;
   color: #444444;
+}
+
+.featured-product__characteristics tr {
+  height: 40px; //Хм, почему-то min-height не работает...
+  border-bottom: 1px solid #ececec;
+}
+
+.featured-product__characteristics td:first-child {
+  min-width: 90px;
 }
 
 .featured-product__preview {
@@ -39,8 +62,49 @@
 }
 
 .featured-product__price {
+  width: 100%;
+  text-align: center;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
   color: #444444;
+}
+
+@media ($tablet-widths) {
+  .featured-product {
+    @include clearfix;
+    font-size: 0;
+  }
+
+  .featured-product__header {
+    float: left;
+    vertical-align: top;
+
+    width: 40%;
+  }
+
+  .featured-product__main-content {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 40%;
+  }
+
+  .featured-product__preview {
+    float: right;
+    vertical-align: top;
+
+    width: 50%;
+  }
+
+  .featured-product__footer {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 40%;
+  }
 }

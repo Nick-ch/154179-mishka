@@ -10,7 +10,7 @@
 
 .page-title__slogan {
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: top;
   width: 260px;
 
   padding-top: 75px;
@@ -57,9 +57,9 @@
   }
 
   .page-title__slogan {
-    width: auto;
+    width: 668px;
 
-    padding-top: 150px;
+    margin-top: 150px;
 
     font-size: 43px;
     line-height: 50px;
@@ -67,5 +67,19 @@
 
   .page-title--index {
     min-height: 630px;
+  }
+}
+
+@media ($desktop-widths) {
+
+  .page-title__slogan {
+    width: 700px;
+
+    margin-left: 100px; // Не понимаю. Если эти маргины убрать, то блок прижмется к левому краю. Но он ведь должен быть по центру, как и на планшетном разрешении? Странно.
+    // На самом деле все равно не работает. Блок прыгает 4 раза при смене ширины окна. Это из-за того, что элемент .page-title__delivery-info флоатом прижат. Попробовал сделать его через позиционирование - пропали элементы навигации из-за position: relative у .page-title. Нужна помощь, у меня нет идей, как сделать все нормально.
+    margin-right: 100px;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 }
