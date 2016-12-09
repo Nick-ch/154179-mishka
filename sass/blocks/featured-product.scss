@@ -154,15 +154,8 @@
     top: 55px;
     left: 0;
 
-    display: flex;
-    align-items: center;
     flex-direction: row-reverse;
     justify-content: flex-end;
-
-    width: 750px;
-
-    margin-bottom: 57px;
-
   }
 
   .featured-product__title {
@@ -178,26 +171,13 @@
 
   .featured-product__main-content {
     margin-top: 170px;
-
     min-height: 340px;
-  }
-
-  .featured-product__item-description {
-
   }
 
   .featured-product__preview {
     width: 525px;
     height: 636px;
     margin-top: 0;
-
-  }
-
-  .featured-product__footer {
-
-  }
-
-  .featured-product__price {
 
   }
 }
