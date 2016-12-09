@@ -49,7 +49,7 @@
 }
 
 .featured-product__characteristics tr {
-  height: 40px; //Хм, почему-то min-height не работает...
+  height: 40px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -74,37 +74,130 @@
   color: #444444;
 }
 
+
+
+
 @media ($tablet-widths) {
   .featured-product {
-    @include clearfix;
-    font-size: 0;
+    @include clearfix
+
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding: 0;
   }
 
   .featured-product__header {
-    float: left;
-    vertical-align: top;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    width: 40%;
+    width: 100%;
+    margin-bottom: 57px;
+  }
+
+  .featured-product__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0;
+  }
+
+  .featured-product__subtitle {
+    width: 80px;
+    text-align: center;
+    margin: 0;
   }
 
   .featured-product__main-content {
-    display: inline-block;
-    vertical-align: top;
+    float: left;
+    width: 290px;
+    min-height: 284px;
+  }
 
-    width: 40%;
+  .featured-product__item-description {
+    margin-top: 0;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .featured-product__preview {
     float: right;
-    vertical-align: top;
+    width: 333px;
+    height: 404px;
+    margin-top: 6px;
 
-    width: 50%;
   }
 
   .featured-product__footer {
-    display: inline-block;
-    vertical-align: top;
+    float: left;
+    width: 290px;
+  }
 
-    width: 40%;
+  .featured-product__price {
+    font-size: 20px;
+  }
+}
+
+
+
+
+@media ($desktop-widths) {
+  .featured-product {
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 85px;
+    padding-left: 175px;
+  }
+
+  .featured-product__header {
+    position: absolute;
+    top: 55px;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    width: 750px;
+
+    margin-bottom: 57px;
+
+  }
+
+  .featured-product__title {
+    font-size: 53px;
+    line-height: 57px;
+
+    margin-left: 50px;
+  }
+
+  .featured-product__subtitle {
+    margin-left: 45px;
+  }
+
+  .featured-product__main-content {
+    margin-top: 170px;
+
+    min-height: 340px;
+  }
+
+  .featured-product__item-description {
+
+  }
+
+  .featured-product__preview {
+    width: 525px;
+    height: 636px;
+    margin-top: 0;
+
+  }
+
+  .featured-product__footer {
+
+  }
+
+  .featured-product__price {
+
   }
 }
