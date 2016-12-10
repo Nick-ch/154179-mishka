@@ -1,5 +1,6 @@
 .about-us {
-
+  margin-top: 35px;
+  margin-bottom: 30px;
 }
 
 .about-us__title {
@@ -15,32 +16,168 @@
 }
 
 .about-us__advantage {
+  position: relative;
+
+  margin-top: 90px;
+  margin-bottom: 90px;
+
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
+}
 
+.about-us__advantage:last-child {
+  margin-bottom: 0;
 }
 
 .about-us__advantage--ecology {
+  &::before {
+    content: "";
 
+    position: absolute;
+    top: -53px;
+    left: 0;
+
+    width: 32px;
+    height: 38px;
+
+    background-image: url(../../img/icon-feature-1.svg);
+    background-repeat: no-repeat;
+  }
 }
 
 .about-us__advantage--price {
+  &::before {
+    content: "";
 
+    position: absolute;
+    top: -64px;
+    left: 0;
+
+    width: 47px;
+    height: 28px;
+
+    background-image: url(../../img/icon-feature-3.svg);
+    background-repeat: no-repeat;
+  }
 }
 
 .about-us__advantage--like {
+  &::before {
+    content: "";
 
+    position: absolute;
+    top: -53px;
+    left: 0;
+
+    width: 34px;
+    height: 28px;
+
+    background-image: url(../../img/icon-feature-5.svg);
+    background-repeat: no-repeat;
+  }
 }
 
 .about-us__advantage--work {
+  &::before {
+    content: "";
 
+    position: absolute;
+    top: -53px;
+    left: 0;
+
+    width: 35px;
+    height: 35px;
+
+    background-image: url(../../img/icon-feature-2.svg);
+    background-repeat: no-repeat;
+  }
 }
 
 .about-us__advantage--country {
+  &::before {
+    content: "";
 
+    position: absolute;
+    top: -63px;
+    left: 0;
+
+    width: 55px;
+    height: 24px;
+
+    background-image: url(../../img/icon-feature-4.svg);
+    background-repeat: no-repeat;
+  }
 }
 
 .about-us__advantage--gift {
+  &::before {
+    content: "";
 
+    position: absolute;
+    top: -57px;
+    left: 0;
+
+    width: 33px;
+    height: 33px;
+
+    background-image: url(../../img/icon-feature-6.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+@media ($tablet-widths) {
+  .about-us {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    // Не нашел способа сделать правильный порядок и чтобы не было проблем с переполнением. с flex-direction: column нужно ограничивать максимальную высоту, чтобы 2 колонки получить. мб через order задать порядок?
+  }
+
+  .about-us__advantage {
+    width: 40%;
+
+    margin-top: 60px;
+    margin-bottom: 55px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .about-us__advantage:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+
+  .about-us__advantage {
+    &::before {
+      top: -40px;
+
+      transform: translateY(-50%);
+    }
+  }
+}
+
+
+
+@media ($desktop-widths) {
+  .about-us {
+    padding-left: 175px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
