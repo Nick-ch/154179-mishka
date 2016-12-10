@@ -135,6 +135,8 @@
   }
 
   .about-us__title {
+    margin-bottom: 50px;
+
     font-size: 43px;
     line-height: 50px;
   }
@@ -142,7 +144,7 @@
   .about-us__advantages-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     // Не нашел способа сделать правильный порядок и чтобы не было проблем с переполнением. с flex-direction: column нужно ограничивать максимальную высоту, чтобы 2 колонки получить. мб через order задать порядок?
   }
 
