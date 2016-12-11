@@ -68,23 +68,21 @@
           </div>
         </article>
       </div>
-      <article class="production-process"> <!-- Не очень мне нравиться решение с обертками в этом блоке. Вот вообще не очень... -->
-        <div class="production-process__wrapper">
-          <div class="production-process__inner-wrapper">
+      <div class="production-process-wrapper">
+        <article class="production-process">
+          <div class="production-process__title-wrapper">
             <h2 class="production-process__title">Процесс производства</h2>
           </div>
-          <figure class="production-process__video-container">
-            <video src="#" class="production-process__video" width="260" height="150" poster="img/video-mobile@1x.jpg">
-
-            </video>
+          <div class="production-process__video-wrapper">
+            <video src="#" class="production-process__video" width="258" height="150" poster="img/video-mobile@1x.jpg"></video>
             <span class="production-process__video-start"></span>
-            <div class="production-process__inner-wrapper"> <!-- Пришлось заменить figcaption, т.к. валидатор ругается, когда видит его внутри дива -->
-              <p class="production-process__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-              <a href="form.html" class="btn btn--place-order">Сделать заказ</a> <!-- А паддинг снизу просто так не добавить у обертки - на заголовок подействует тогда. Может через псевдоклассы? -->
-            </div>
-          </figure>
-        </div>
-      </article>
+          </div>
+          <div class="production-process__description-wrapper">
+            <p class="production-process__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a href="form.html" class="btn btn--place-order">Сделать заказ</a>
+          </div>
+        </article>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">

@@ -1,26 +1,40 @@
 .production-process {
-  padding: 0 30px;
-  width: 320px;
-  margin: 0 auto;
-}
-
-.production-process__wrapper {
   border: 1px solid #ededed;
-
 }
 
-.production-process__inner-wrapper {
-  padding: 0 30px;
+.production-process__title-wrapper {
+  position: relative;
+
+  padding: 30px;
+  padding-top: 25px;
+  padding-bottom: 20px;
 }
 
 .production-process__title {
+  padding-left: 60px;
+
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 34px;
+    transform: translateY(-50%);
+
+    width: 32px;
+    height: 32px;
+
+    background-image: url(../../img/icon-video.svg);
+    background-repeat: no-repeat;
+  }
 }
 
-.production-process__video-container {
-  margin: 0;
+.production-process__video-wrapper {
+
 }
 
 .production-process__video {
@@ -31,9 +45,110 @@
 
 }
 
+.production-process__description-wrapper {
+  padding: 34px;
+  padding-top: 25px;
+}
+
 .production-process__video-description {
+  margin-bottom: 25px;
+
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
   color: #444;
+}
+
+
+
+@media ($tablet-widths) {
+  .production-process {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .production-process__title-wrapper {
+    padding-top: 40px;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+
+  .production-process__title {
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      top: 50px;
+      left: 40px;
+    }
+  }
+
+  .production-process__video-wrapper {
+    order: -1;
+
+    background-color: #e5e5e5; //временно, для видимости разметки
+  }
+
+  .production-process__video-wrapper video {
+    height: 450px; //Хм... Браузер (Хром) отрисовывает на 5пх больше.
+  }
+
+  .production-process__description-wrapper {
+    padding-top: 10px;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+
+  .production-process__video-description {
+    margin-bottom: 35px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+
+
+@media ($desktop-widths) {
+  .production-process {
+    display: block;
+    @include clearfix;
+  }
+
+  .production-process__title-wrapper {
+    float: right;
+
+    width: 230px;
+
+    padding-top: 95px;
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+
+  .production-process__title {
+    padding: 0;
+
+    &::before {
+      top: 57px;
+      left: 58px;
+    }
+  }
+
+  .production-process__video-wrapper {
+    float: left;
+    width: 682px;
+  }
+
+  .production-process__description-wrapper {
+    float: right;
+
+    width: 230px;
+
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+
+  .production-process__video-description {
+    margin-bottom: 50px;
+  }
 }

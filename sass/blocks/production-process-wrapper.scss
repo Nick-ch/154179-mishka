@@ -1,0 +1,16 @@
+.production-process-wrapper {
+  @include container;
+  margin-bottom: 58px;
+}
+
+@media ($tablet-widths) {
+  .production-process-wrapper {
+    margin-bottom: 63px;
+  }
+}
+
+@media ($desktop-widths) {
+  .production-process-wrapper {
+    margin-bottom: 105px;
+  }
+}
