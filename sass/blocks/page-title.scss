@@ -17,6 +17,9 @@
 
 .page-title--form {
   min-height: 180px;
+
+  margin-bottom: 30px;
+
   background-color: #f1f1f1;
 }
 
@@ -60,6 +63,8 @@
 
   .page-title--form {
     min-height: 220px;
+
+    margin-bottom: 85px;
   }
 
   .page-title--catalog {
@@ -113,6 +118,10 @@
   }
 
   .page-title--catalog {
+    margin-bottom: 140px;
+  }
+
+  .page-title--form {
     margin-bottom: 140px;
   }
 }

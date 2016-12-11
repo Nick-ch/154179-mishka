@@ -1,8 +1,13 @@
 .order-form {
+  @include container;
+
   padding: 0 30px;
+  margin-bottom: 55px;
 }
 
 .order-form__description {
+  margin-bottom: 25px;
+
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
@@ -10,7 +15,34 @@
 }
 
 .order-form__block {
+  position: relative;
 
+  margin: 0;
+  padding: 0;
+  padding-top: 33px;
+  padding-bottom: 38px;
+
+  border: none;
+
+  &::after {
+    content: "";
+
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 0;
+
+    width: 198px;
+    height: 1px;
+
+    border-top: 1px solid $mishka-green;
+  }
+}
+
+.order-form__block--small-padding {
+  padding-top: 5px;
+  padding-bottom: 8px;
+  margin-bottom: 25px;
 }
 
 .order-form__block-title {
@@ -35,20 +67,164 @@
   color: #444;
 }
 
+//------------------------------------
+
+//*****************
+// Тип изделия
+//*****************
 .order-form__type-input {
-
+  display: none;
 }
 
+.order-form__type-input + label{
+  position: relative;
+  display: block;
+
+  padding-left: 62px;
+  margin-bottom: 30px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -15px;
+    left: 0;
+
+    display: block;
+
+    width: 34px;
+    height: 34px;
+
+    border: 3px solid #444;
+    border-radius: 50%;
+  }
+}
+
+.order-form__type-input:checked + label {
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: -3px;
+    left: 12px;
+
+    display: block;
+
+    width: 0;
+    height: 0;
+
+    border: 8px solid $mishka-green;
+    border-radius: 50%;
+  }
+}
+
+.order-form__type-input + label:last-child {
+  margin-bottom: 0;
+}
+
+//------------------------------------
+
+//*****************
+// Цвет изделия
+//*****************
 .order-form__color-input {
-
+  display: none;
 }
 
-.order-form__user-name-label {
+.order-form__color-input + label {
+  position: relative;
+  display: block;
 
+  padding-left: 62px;
+  margin-bottom: 44px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -15px;
+    left: 0;
+
+    display: block;
+
+    width: 34px;
+    height: 34px;
+
+    border: 3px solid #444;
+  }
+}
+
+.order-form__color-input:checked + label {
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: -2px;
+    left: 9px;
+
+    display: block;
+
+    width: 23px;
+    height: 16px;
+
+    background-image: url(../../img/icon-tick.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.order-form__color-input + label:last-child {
+  margin-bottom: 0;
+}
+
+//------------------------------------
+
+//*****************
+// ФИО
+//*****************
+.order-form__user-name-label {
+  display: block;
 }
 
 .order-form__user-name-input {
+  display: block;
 
+  width: 100%;
+
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin-bottom: 20px;
+
+  border: none;
+  border-bottom: 2px solid #000;
+}
+
+.order-form__user-name-input:last-child {
+  margin-bottom: 0;
+}
+
+//------------------------------------
+
+//*****************
+// Телефон
+//*****************
+.order-form__block--user-tel {
+  position: relative;
+  &::before {
+    content: "";
+
+    display: block;
+    position: absolute;
+    top: 32px;
+    right: 4px;
+
+    width: 25px;
+    height: 25px;
+
+    background-image: url(../../img/icon-phone.svg);
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
 }
 
 .order-form__user-tel-label {
@@ -56,7 +232,39 @@
 }
 
 .order-form__user-tel-input {
+  display: block;
 
+  width: 100%;
+
+  padding-top: 17px;
+  padding-bottom: 17px;
+
+  border: none;
+  border-bottom: 2px solid #000;
+}
+
+//------------------------------------
+
+//*****************
+// Email
+//*****************
+.order-form__block--user-email {
+  position: relative;
+  &::before {
+    content: "";
+
+    display: block;
+    position: absolute;
+    top: 28px;
+    right: 0;
+
+    width: 32px;
+    height: 32px;
+
+    background-image: url(../../img/icon-mail.svg);
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
 }
 
 .order-form__user-email-label {
@@ -64,14 +272,47 @@
 }
 
 .order-form__user-email-input {
+  display: block;
 
+  width: 100%;
+
+  padding-top: 17px;
+  padding-bottom: 17px;
+
+  border: none;
+  border-bottom: 2px solid #000;
+}
+
+//------------------------------------
+
+//*****************
+// Дополнительно
+//*****************
+.order-form__block--textarea {
+  padding-top: 25px;
+  padding-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .order-form__text-area {
+  width: 260px;
+  height: 142px;
 
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  box-sizing: border-box;
+  border: 2px solid #444;
+
+  resize: vertical;
 }
+//------------------------------------
 
 .order-form__help {
+  margin-bottom: 30px;
+
   font-size: 14px;
   line-height: 16px;
   font-weight: normal;
