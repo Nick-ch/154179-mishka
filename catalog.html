@@ -10,15 +10,21 @@
     <header class="page-header">
       <h1 class="visually-hidden">Магазин вязаных изделий для дома "Мишка"</h1>
       <div class="page-header__logo">
-        <a href="index.html"><img src="img/logo-mobile.svg" alt="Mishka"></a>
+        <a><img src="img/logo-mobile.svg" alt="Mishka"></a>
       </div>
       <nav class="main-nav">
         <span class="main-nav__toggle"></span>
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a>Каталог товаров</a></li>
+        <ul class="main-nav__items  main-nav__items--list-1">
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+        </ul>
+        <ul class="main-nav__items  main-nav__items--list-2">
           <li class="main-nav__item"><a class="main-nav__search" href="#">Поиск по сайту</a></li>
           <li class="main-nav__item"><a class="main-nav__shop-cart" href="#">Корзина: пока пуста</a></li>
+        </ul>
+        <ul class="main-nav__items  main-nav__items--list-3">
+          <li class="main-nav__item"><a href="#">Новые поступления</a></li>
+          <li class="main-nav__item"><a href="#">Распродажа</a></li>
         </ul>
       </nav>
     </header>
@@ -78,30 +84,37 @@
       </article>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__social-links">
-        <div class="social-btn  social-btn--instagram"><a class="social-btn__link" href="#">Instagram</a></div>
-        <div class="social-btn  social-btn--facebook"><a class="social-btn__link" href="#">Facebook</a></div>
-        <div class="social-btn  social-btn--twitter"><a class="social-btn__link" href="#">Twitter</a></div>
-      </div>
-      <div class="page-footer__developer">
-        <span>Разработано <a href="https://htmlacademy.ru">HTML Academy</a></span>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logo-mobile.svg" alt="Mishka">
+        </div>
+        <div class="page-footer__social-links">
+          <a class="social-btn  social-btn--instagram" href="#">Instagram</a>
+          <a class="social-btn  social-btn--facebook" href="#">Facebook</a>
+          <a class="social-btn  social-btn--twitter" href="#">Twitter</a>
+        </div>
+        <div class="page-footer__developer">
+          <span>Разработано <a href="https://htmlacademy.ru">HTML Academy</a></span>
+        </div>
       </div>
     </footer>
     <section class="modal  modal--add-to-cart">
       <h2 class="modal__title">Добавить в корзину</h2>
-      <form action="#" method="get"  class="modal__form">
-        <p class="modal__description">Выберите размер</p>
+      <form class="modal__form" action="#" method="get">
+        <p class="modal__description">Выберите размер:</p>
+        <div class="modal__form-inner-wrap">
+          <input class="modal__input" id="input-size-01" type="radio" name="input-size">
+          <label for="input-size-01" class="modal__label">S</label>
 
-        <input class="modal__input" id="input-size-01" type="radio" name="input-size">
-        <label for="input-size-01" class="modal__label">S</label>
+          <input class="modal__input" id="input-size-02" type="radio" name="input-size" checked>
+          <label for="input-size-02" class="modal__label">M</label>
 
-        <input class="modal__input" id="input-size-02" type="radio" name="input-size">
-        <label for="input-size-02" class="modal__label">M</label>
-
-        <input class="modal__input" id="input-size-03" type="radio" name="input-size">
-        <label for="input-size-03" class="modal__label">L</label>
+          <input class="modal__input" id="input-size-03" type="radio" name="input-size">
+          <label for="input-size-03" class="modal__label">L</label>
+        </div>
         <button class="btn btn--green" type="submit">Добавить</button>
       </form>
     </section>
+    <div class="modal__overlay"></div>
   </body>
 </html>
