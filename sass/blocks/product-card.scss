@@ -1,18 +1,50 @@
 .product-card {
-  border: 1px solid #ededed;
   margin-top: 30px;
   margin-bottom: 30px;
+
+  border: 1px solid #ededed;
 }
 
 .product-card__link {
 
 }
 
+.product-card__link--img {
+  display: block;
+  font-size: 0;
+
+  background-color: #e6e6e8;
+}
+
+.product-card__link--img img {
+  background-color: #e6e6e8;
+}
+
+.product-card__link--cart {
+  font-size: 0;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    right: 0;
+
+    width: 21px;
+    height: 19px;
+
+    background-image: url(../../img/icon-cart.svg);
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+}
+
 .product-card__wrapper-common {
-  padding: 30px;
+  padding: 28px;
 }
 
 .product-card__title {
+  margin-bottom: 5px;
+
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -24,6 +56,8 @@
 }
 
 .product-card__description {
+  margin-bottom: 20px;
+
   font-size: 13px;
   line-height: 30px;
   font-weight: normal;
@@ -31,11 +65,97 @@
 }
 
 .product-card__wrapper-price {
+  position: relative;
 
+  padding-top: 20px;
+
+  border-top: 1px solid #ececec;
 }
 
 .product-card__price {
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
+}
+
+
+
+@media ($tablet-widths) {
+  .product-card {
+    display: flex;
+    justify-content: center;
+
+    min-height: 334px;
+
+    margin-top: 54px;
+    margin-bottom: 54px;
+  }
+
+  .product-card__link--img {
+    flex-grow: 2;
+
+    width: 50%;
+  }
+
+  .product-card__wrapper-common {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+
+    width: 50%;
+
+    box-sizing: border-box;
+  }
+
+  .product-card__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .product-card__description {
+    font-size: 15px;
+  }
+
+  .product-card__wrapper-price {
+    margin-top: auto;
+  }
+
+  .product-card__price {
+    font-size: 17px;
+  }
+}
+
+
+
+@media ($desktop-widths) {
+  .product-card {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+
+    width: 316px;
+    min-height: 659px;
+
+    margin: 0;
+    margin-bottom: 57px;
+  }
+
+  .product-card__link--img {
+    flex-grow: 1;
+
+    width: 100%;
+    height: 462px;
+  }
+
+  .product-card__wrapper-common {
+    justify-content: space-between;
+    flex-grow: 1;
+
+    width: 100%;
+    min-height: 197px;
+  }
+
+  .product-card__description {
+    margin-bottom: 0;
+  }
 }

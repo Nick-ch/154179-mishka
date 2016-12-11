@@ -5,23 +5,6 @@
   font-size: 0;
 }
 
-.page-title__delivery-info {
-  font-size: 0;
-}
-
-.page-title__slogan {
-  display: inline-block;
-  vertical-align: top;
-  clear: both;
-  width: 260px;
-
-  margin-top: 75px;
-
-  font-size: 27px;
-  line-height: 30px;
-  font-weight: bold;
-}
-
 .page-title--index {
   min-height: 280px;
 
@@ -39,13 +22,50 @@
 
 .page-title--catalog {
   min-height: 180px;
+
+  margin-bottom: 30px;
+
   background-color: #f1f1f1;
 }
+
+
+.page-title__delivery-info {
+  font-size: 0;
+}
+
+.page-title__slogan {
+  display: inline-block;
+  vertical-align: top;
+  clear: both;
+  width: 260px;
+
+  margin-top: 75px;
+
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+
 
 @media ($tablet-widths) {
   .page-title {
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+    .page-title--index {
+    min-height: 630px;
+  }
+
+  .page-title--form {
+    min-height: 220px;
+  }
+
+  .page-title--catalog {
+    min-height: 220px;
+
+    margin-bottom: 85px;
   }
 
   .page-title__delivery-info {
@@ -69,10 +89,16 @@
     line-height: 50px;
   }
 
-  .page-title--index {
-    min-height: 630px;
+  .page-title--catalog .page-title__slogan {
+    margin-top: 80px;
+  }
+
+  .page-title--form .page-title__slogan {
+    margin-top: 80px;
   }
 }
+
+
 
 @media ($desktop-widths) {
 
@@ -84,5 +110,9 @@
 
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .page-title--catalog {
+    margin-bottom: 140px;
   }
 }
