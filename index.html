@@ -146,19 +146,21 @@
     </footer>
     <section class="modal  modal--add-to-cart">
       <h2 class="modal__title">Добавить в корзину</h2>
-      <form action="#" method="get"  class="modal__form">
-        <p class="modal__description">Выберите размер</p>
+      <form class="modal__form" action="#" method="get">
+        <p class="modal__description">Выберите размер:</p>
+        <div class="modal__form-inner-wrap">
+          <input class="modal__input" id="input-size-01" type="radio" name="input-size">
+          <label for="input-size-01" class="modal__label">S</label>
 
-        <input class="modal__input" id="input-size-01" type="radio" name="input-size">
-        <label for="input-size-01" class="modal__label">S</label>
+          <input class="modal__input" id="input-size-02" type="radio" name="input-size" checked>
+          <label for="input-size-02" class="modal__label">M</label>
 
-        <input class="modal__input" id="input-size-02" type="radio" name="input-size">
-        <label for="input-size-02" class="modal__label">M</label>
-
-        <input class="modal__input" id="input-size-03" type="radio" name="input-size">
-        <label for="input-size-03" class="modal__label">L</label>
+          <input class="modal__input" id="input-size-03" type="radio" name="input-size">
+          <label for="input-size-03" class="modal__label">L</label>
+        </div>
         <button class="btn btn--green" type="submit">Добавить</button>
       </form>
     </section>
+    <div class="modal__overlay"></div>
   </body>
 </html>

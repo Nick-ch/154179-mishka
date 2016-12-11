@@ -31,9 +31,14 @@
 }
 
 .btn--green {
-  color: #fff;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
   background: $mishka-green;
+
   border: none;
+
+  color: #fff;
 }
 
 .btn--form-send {
