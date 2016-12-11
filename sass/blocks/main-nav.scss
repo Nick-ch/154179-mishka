@@ -90,6 +90,7 @@
 }
 
 
+
 @media ($tablet-widths) {
   .main-nav__toggle {
     display: none;
@@ -104,6 +105,8 @@
     top: 90px;
 
     font-size: 0;
+
+    z-index: 10;
   }
 
   .main-nav__items--list-1 .main-nav__item {
@@ -147,6 +150,7 @@
     transform: translate(-50%, -50%);
   }
 }
+
 
 
 @media ($desktop-widths) {
