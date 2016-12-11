@@ -103,6 +103,7 @@
   .main-nav__items--list-1 {
     position: absolute;
     top: 90px;
+    left: 50px;
 
     font-size: 0;
 
@@ -122,8 +123,8 @@
   }
 
   .main-nav__items--list-2 {
-    float: right;
-    font-size: 0;
+//    float: right;
+//    font-size: 0;
   }
 
   .main-nav__items--list-2 .main-nav__item {
@@ -154,10 +155,17 @@
 
 
 @media ($desktop-widths) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+  }
+
   .main-nav__items--list-1 {
     position: static;
-    float: left;
 
+    margin-right: auto;
   }
 
   .main-nav__items--list-1 .main-nav__item:nth-child(odd) {
@@ -178,12 +186,18 @@
     font-size: 17px;
   }
 
+  .main-nav__items--list-2 {
+    margin-left: auto;
+  }
+
   .main-nav__items--list-3 {
     display: block;
     position: absolute;
     top: 90px;
 
     font-size: 0;
+
+    z-index: 10;
   }
 
   .main-nav__items--list-3 .main-nav__item {

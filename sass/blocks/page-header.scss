@@ -19,7 +19,8 @@
 
 @media ($tablet-widths) {
   .page-header {
-    @include clearfix;
+    display: flex;
+    justify-content: space-between;
 
     min-height: 88px;
 
@@ -30,7 +31,6 @@
   }
 
   .page-header__logo {
-    float: left;
     width: 86px;
 
     padding-top: 26px;
