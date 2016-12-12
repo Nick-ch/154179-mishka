@@ -469,5 +469,71 @@
 //*****************
 // ФИО
 //*****************
+  .order-form__outer-wrapper--user-name {
+    padding-bottom: 40px;
+  }
 
+  .order-form__block--user-name {
+    margin-bottom: 0;
+  }
+
+  .order-form__inner-wrapper--user-name-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+    width: 501px;
+
+    box-sizing: border-box;
+  }
+
+  .order-form__field-wrapper {
+    display: flex;
+    align-items: baseline;
+
+    width: 501px;
+
+    margin-bottom: 21px;
+  }
+
+  .order-form__user-name-label {
+    margin-right: 20px;
+  }
+
+  .order-form__user-name-input {
+    width: 100%;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+//*****************
+// Тел/Email
+//*****************
+  .order-form__block--user-tel {
+    &::before {
+      top: 12px;
+      right: 26px;
+    }
+  }
+
+  .order-form__block--user-email {
+    &::before {
+      top: 5px;
+      right: 23px;
+    }
+  }
+
+
+  .order-form__user-tel-input {
+    width: 501px;
+
+    background-color: #f1f1f1;
+  }
+
+  .order-form__user-email-input {
+    width: 501px;
+
+    background-color: #f1f1f1;
+  }
 }
