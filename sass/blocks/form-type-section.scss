@@ -93,7 +93,9 @@
 
 @media ($tablet-widths) {
   .form-type-section {
-    margin-bottom: 65px;
+    margin-bottom: 0;
+    padding-top: 65px;
+    padding-bottom: 65px;
   }
 
   .form-type-section__container {
