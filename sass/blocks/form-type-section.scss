@@ -92,5 +92,57 @@
 
 
 @media ($tablet-widths) {
+  .form-type-section {
+    margin-bottom: 65px;
+  }
 
+  .form-type-section__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .form-type-section__title {
+    width: 167px;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .form-type-section__inner-wrapper {
+
+  }
+
+  .form-type-section__input + label {
+    padding-left: 80px;
+    margin-bottom: 60px;
+
+    font-size: 19px;
+
+    &::before {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .form-type-section__input:checked + label {
+    &::after {
+      top: 1px;
+      left: 16px;
+
+      border: 11px solid $mishka-green;
+    }
+  }
+}
+
+
+
+@media ($desktop-widths) {
+  .form-type-section__title {
+    padding-left: 62px;
+
+    width: 175px;
+
+    box-sizing: border-box;
+  }
 }
