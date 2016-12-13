@@ -46,6 +46,10 @@
   padding-left: 62px;
   margin-bottom: 44px;
 
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+
   &::before {
     content: "";
 
@@ -103,7 +107,6 @@
 
   .form-color-section__title {
     width: 167px;
-    flex-grow: 5;
 
     &:after {
       display: none;

@@ -49,19 +49,19 @@
   }
 }
 
-.order-form label {
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: bold;
-}
-
-.order-form input,
-.order-form__text-area {
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: normal;
-  color: #444;
-}
+//.order-form label {
+//  font-size: 17px;
+//  line-height: 18px;
+//  font-weight: bold;
+//}
+//
+//.order-form input,
+//.order-form__text-area {
+//  font-size: 17px;
+//  line-height: 18px;
+//  font-weight: normal;
+//  color: #444;
+//}
 
 //------------------------------------
 
@@ -81,30 +81,6 @@
 //*****************
 // ФИО
 //*****************
-.order-form__block--user-name .order-form__block-title {
-  margin-bottom: 30px;
-}
-
-.order-form__user-name-label {
-  display: block;
-}
-
-.order-form__user-name-input {
-  display: block;
-
-  width: 100%;
-
-  padding-top: 17px;
-  padding-bottom: 17px;
-  margin-bottom: 20px;
-
-  border: none;
-  border-bottom: 2px solid #000;
-}
-
-.order-form__user-name-input:last-child {
-  margin-bottom: 0;
-}
 
 //------------------------------------
 
@@ -288,81 +264,11 @@
 //*****************
 // Тип изделия
 //*****************
-  .order-form__type-input + label{
-    padding-left: 80px;
-    margin-bottom: 55px;
-    &::before {
-      top: -17px;
-      left: -2px;
-
-      width: 47px;
-      height: 47px;
-    }
-  }
-
-  .order-form__type-input:checked + label {
-    &::after {
-      top: -2px;
-      left: 13px;
-
-      border: 11px solid $mishka-green;
-      border-radius: 50%;
-    }
-  }
 
 //*****************
 // Цвет изделия
 //*****************
-  .order-form__outer-wrapper--color-section {
-    padding-top: 65px;
-  }
 
-  .order-form__block--color-section {
-    margin-bottom: 0;
-  }
-
-  .order-form__inner-wrapper--flex {
-    display: flex;
-    flex-wrap: wrap;
-
-    padding-left: 80px;
-  }
-
-  .order-form__inner-wrapper--flex label{
-    width: 50%;
-
-    padding-left: 80px;
-    box-sizing: border-box;
-  }
-
-  .order-form__color-input + label {
-    padding-left: 82px;
-    margin-bottom: 58px;
-
-    &::before {
-      top: -15px;
-      left: 0;
-
-      width: 50px;
-      height: 50px;
-
-      border: 2px solid #444;
-    }
-  }
-
-  .order-form__color-input + label:nth-last-child(-n+3) {
-    margin-bottom: 30px;
-  }
-
-  .order-form__color-input:checked + label {
-    &::after {
-      top: 0;
-      left: 12px;
-
-      width: 33px;
-      height: 23px;
-    }
-  }
 
 //*****************
 // ФИО
