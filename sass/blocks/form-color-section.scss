@@ -114,7 +114,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    padding-left: 80px;
+    width: 501px;
   }
 
   .form-color-section__input + label {
@@ -139,7 +139,7 @@
   .form-color-section__input:checked + label {
     &::after {
       top: -5px;
-      left: 16px;
+      left: 12px;
 
       width: 33px;
       height: 23px;
@@ -163,7 +163,7 @@
   }
 
   .form-color-section__inner-wrapper {
-    padding-left: 0px;
+    width: 875px;
   }
 
   .form-color-section__input + label {
