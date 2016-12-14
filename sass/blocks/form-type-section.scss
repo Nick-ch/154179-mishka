@@ -1,0 +1,150 @@
+.form-type-section {
+  margin-bottom: 25px;
+}
+
+.form-type-section__container {
+  @include container;
+}
+
+.form-type-section__title {
+  position: relative;
+  margin-bottom: 35px;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: $mishka-green;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 0;
+
+    width: 198px;
+    height: 1px;
+
+    border-top: 1px solid $mishka-green;
+  }
+}
+
+.form-type-section__inner-wrapper {
+
+}
+
+.form-type-section__input {
+  display: none;
+}
+
+.form-type-section__input + label {
+  position: relative;
+  display: block;
+
+  padding-left: 62px;
+  margin-bottom: 30px;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -14px;
+    left: 1px;
+
+    display: block;
+
+    width: 36px;
+    height: 36px;
+
+    border: 2px solid #444;
+    border-radius: 50%;
+  }
+}
+
+.form-type-section__input:checked + label {
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: -2px;
+    left: 13px;
+
+    display: block;
+
+    width: 0;
+    height: 0;
+
+    border: 8px solid $mishka-green;
+    border-radius: 50%;
+  }
+}
+
+.form-type-section__input + label:last-child {
+  margin-bottom: 0;
+}
+
+
+
+@media ($tablet-widths) {
+  .form-type-section {
+    margin-bottom: 0;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .form-type-section__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .form-type-section__title {
+    width: 167px;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .form-type-section__inner-wrapper {
+
+  }
+
+  .form-type-section__input + label {
+    padding-left: 80px;
+    margin-bottom: 60px;
+
+    font-size: 19px;
+
+    &::before {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .form-type-section__input:checked + label {
+    &::after {
+      top: 1px;
+      left: 16px;
+
+      border: 11px solid $mishka-green;
+    }
+  }
+}
+
+
+
+@media ($desktop-widths) {
+  .form-type-section__title {
+    padding-left: 62px;
+
+    width: 175px;
+
+    box-sizing: border-box;
+  }
+}

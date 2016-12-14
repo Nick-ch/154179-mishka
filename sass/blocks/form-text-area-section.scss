@@ -1,0 +1,135 @@
+.form-text-area-section {
+
+}
+
+.form-text-area-section__container {
+  @include container;
+}
+
+.form-text-area-section__text-wrapper {
+  margin-bottom: 16px;
+}
+
+.form-text-area-section__title {
+  position: relative;
+  margin-bottom: 25px;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: $mishka-green;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 0;
+
+    width: 198px;
+    height: 1px;
+
+    border-top: 1px solid $mishka-green;
+  }
+}
+
+.form-text-area-section__inner-wrapper {
+
+}
+
+.form-text-area-section__text-area {
+  width: 260px;
+  height: 142px;
+  max-height: 300px;
+
+  padding: 15px;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #444;
+
+  box-sizing: border-box;
+  border: 2px solid #444;
+
+  resize: vertical;
+}
+
+.form-text-area-section__btn-wrapper {
+
+}
+
+.form-text-area-section__help {
+  margin-bottom: 31px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #444;
+}
+
+
+
+@media ($tablet-widths) {
+  .form-text-area-section {
+    padding-top: 50px;
+  }
+
+  .form-text-area-section__text-wrapper {
+    display: flex;
+    align-items: baseline;
+
+    margin-bottom: 53px;
+  }
+
+  .form-text-area-section__title {
+    width: 167px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .form-text-area-section__text-area {
+    width: 501px;
+
+    font-size: 19px;
+  }
+
+  .form-text-area-section__btn-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .form-text-area-section__help {
+    margin-bottom: 0;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+
+
+@media ($desktop-widths) {
+  .form-text-area-section__title {
+    padding-left: 62px;
+
+    width: 175px;
+
+    box-sizing: border-box;
+  }
+
+  .form-text-area-section__text-area {
+    width: 700px;
+  }
+
+  .form-text-area-section__btn-wrapper {
+    margin-left: 175px;
+    margin-right: 175px;
+  }
+}

@@ -2,36 +2,56 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Магазин вязаных изделий для дома "Мишка"</h1>
-      <div class="page-header__logo">
-        <a><img src="img/logo-mobile.svg" alt="Mishka"></a>
-      </div>
+      <a class="page-header__logo">
+        <img src="img/logo-mobile.svg" alt="Mishka">
+      </a>
       <nav class="main-nav">
         <span class="main-nav__toggle"></span>
-        <ul class="main-nav__items">
+        <ul class="main-nav__items  main-nav__items--list-1">
           <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+        </ul>
+        <ul class="main-nav__items  main-nav__items--list-2">
           <li class="main-nav__item"><a class="main-nav__search" href="#">Поиск по сайту</a></li>
           <li class="main-nav__item"><a class="main-nav__shop-cart" href="#">Корзина: пока пуста</a></li>
+        </ul>
+        <ul class="main-nav__items  main-nav__items--list-3">
+          <li class="main-nav__item"><a href="#">Новые поступления</a></li>
+          <li class="main-nav__item"><a href="#">Распродажа</a></li>
         </ul>
       </nav>
     </header>
     <main class="page-main-content">
-      <div class="page-title page-title--index">Милые штуки ручной работы&nbsp;для&nbsp;дома</div>
+      <div class="page-title page-title--index">
+        <p class="page-title__delivery-info">Бесплатная доставка по России</p>
+        <p class="page-title__slogan">Милые штуки ручной работы&nbsp;для&nbsp;дома</p>
+      </div>
       <ul class="shop-links">
-        <li class="shop-links__item"><a href="#" class="shop-links__link"><span class="shop-link__text  shop-link__text--stuff-img">Предметы интерьера</span></a></li>
-        <li class="shop-links__item  shop-links__item--darker"><a href="#" class="shop-links__link"><span class="shop-link__text  shop-link__text--toys-img">Детские игрушки</span></a></li>
+        <li class="shop-links__item">
+          <a href="#" class="shop-links__link">
+            <span class="shop-link__text  shop-link__text--stuff-img">Предметы<br> интерьера</span>
+          </a>
+        </li>
+        <li class="shop-links__item  shop-links__item--darker">
+          <a href="#" class="shop-links__link">
+            <span class="shop-link__text  shop-link__text--toys-img">Детские<br> игрушки</span>
+          </a>
+        </li>
       </ul>
       <div class="page-main-content__wrapper">
         <article class="featured-product">
           <header class="featured-product__header">
             <h2 class="featured-product__title">Вязаные корзинки</h2>
             <h3 class="featured-product__subtitle">Товар недели</h3>
+          </header>
+          <div class="featured-product__main-content">
             <p class="featured-product__item-description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             <table class="featured-product__characteristics">
               <tr>
@@ -47,11 +67,16 @@
                 <td>15см</td>
               </tr>
             </table>
-          </header>
+          </div>
           <img src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки" class="featured-product__preview">
-          <div class="featured-product__price">Цена: 990 руб.</div>
-          <a href="#" class="btn btn--order">Заказать</a>
+          <footer class="featured-product__footer">
+            <div class="featured-product__price">Цена: 990 руб.</div>
+            <a href="#" class="btn btn--order">Заказать</a>
+          </footer>
         </article>
+      </div>
+      <div class="page-main-content__decoration-border"></div>
+      <div class="page-main-content__wrapper">
         <section class="about-us">
           <h2 class="about-us__title">Коротко о нас:</h2>
           <ul class="about-us__advantages-list">
@@ -72,59 +97,70 @@
               <a href="#" class="user-review__user-nickname">@misssssiskras</a>
             </div>
           </div>
-          <button class="reviews__previous-review">&#8592;</button>
-          <button class="reviews__next-review">&#8594;</button>
-          <a href="#" class="btn btn--review-write">Написать</a>
+          <div class="reviews__buttons">
+            <div class="reviews__buttons-wrapper">
+              <button class="reviews__previous-review">&#8592;</button>
+              <button class="reviews__next-review">&#8594;</button>
+            </div>
+            <a href="#" class="btn btn--review-write">Написать</a>
+          </div>
         </section>
       </div>
-      <section class="contacts">
-        <div class="contacts__wrapper">
+      <div class="page-main-content__decoration-border"></div>
+      <article class="contacts">
+        <div class="contacts__wrapper  contacts__wrapper--desktop-first">
           <h4 class="contacts__title">Контакты</h4>
           <table class="contacts__table">
             <tr class="contacts__table-email-row">
               <td>e-mail:</td>
               <td><a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
             </tr>
-            <tr class="contacts__table-tel-row">
+            <tr class="contacts__table-adress-row">
               <td>адрес:</td>
               <td>г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</td>
             </tr>
           </table>
         </div>
-        <div class="contacts__map  map"> <!-- Помню, ты говорила, что с миксами нужно осторожнее. Но мне кажется, будет лучше (и логичнее), если поинтер будет элементом карты, а не блока контактов. Что скажешь? -->
-          <img src="img/map-mobile@1x.jpg" alt="Карта">
-          <img class="map__pin" src="img/icon-map-pin.svg" alt="Point">
+        <div class="contacts__map  map">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=trJuyhW4DV5kBa7QHy8ImHOLqA664wDy&amp;width=100%25&amp;height=457&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
         </div>
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper  contacts__wrapper--desktop-second">
           <a href="#" class="btn btn--contact">Напишите нам</a>
         </div>
-      </section>
+      </article>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__social-links">
-        <div class="social-btn  social-btn--instagram"><a class="social-btn__link" href="#">Instagram</a></div>
-        <div class="social-btn  social-btn--facebook"><a class="social-btn__link" href="#">Facebook</a></div>
-        <div class="social-btn  social-btn--twitter"><a class="social-btn__link" href="#">Twitter</a></div>
-      </div>
-      <div class="page-footer__developer">
-        <span>Разработано <a href="https://htmlacademy.ru">HTML Academy</a></span>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logo-mobile.svg" alt="Mishka">
+        </div>
+        <div class="page-footer__social-links">
+          <a class="social-btn  social-btn--instagram" href="#">Instagram</a>
+          <a class="social-btn  social-btn--facebook" href="#">Facebook</a>
+          <a class="social-btn  social-btn--twitter" href="#">Twitter</a>
+        </div>
+        <div class="page-footer__developer">
+          <span>Разработано <a href="https://htmlacademy.ru">HTML Academy</a></span>
+        </div>
       </div>
     </footer>
     <section class="modal  modal--add-to-cart">
       <h2 class="modal__title">Добавить в корзину</h2>
-      <form action="#" method="get"  class="modal__form">
-        <p class="modal__description">Выберите размер</p>
+      <form class="modal__form" action="#" method="get">
+        <p class="modal__description">Выберите размер:</p>
+        <div class="modal__form-inner-wrap">
+          <input class="modal__input" id="input-size-01" type="radio" name="input-size">
+          <label for="input-size-01" class="modal__label">S</label>
 
-        <input class="modal__input" id="input-size-01" type="radio" name="input-size">
-        <label for="input-size-01" class="modal__label">S</label>
+          <input class="modal__input" id="input-size-02" type="radio" name="input-size" checked>
+          <label for="input-size-02" class="modal__label">M</label>
 
-        <input class="modal__input" id="input-size-02" type="radio" name="input-size">
-        <label for="input-size-02" class="modal__label">M</label>
-
-        <input class="modal__input" id="input-size-03" type="radio" name="input-size">
-        <label for="input-size-03" class="modal__label">L</label>
+          <input class="modal__input" id="input-size-03" type="radio" name="input-size">
+          <label for="input-size-03" class="modal__label">L</label>
+        </div>
         <button class="btn btn--green" type="submit">Добавить</button>
       </form>
     </section>
+    <div class="modal__overlay"></div>
   </body>
 </html>

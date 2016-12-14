@@ -1,4 +1,14 @@
 .btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  box-sizing: border-box;
+  border: 2px solid #444;
+
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
@@ -16,19 +26,51 @@
 }
 
 .btn--contact {
-
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .btn--green {
-  color: #fff;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
   background: $mishka-green;
+
   border: none;
+
+  color: #fff;
 }
 
 .btn--form-send {
-
+  background-color: #fff;
 }
 
 .btn--place-order {
 
+}
+
+
+
+@media ($tablet-widths) {
+  .btn--contact {
+    width: 230px;
+
+    margin-top: 55px;
+    margin-bottom: 57px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn--form-send {
+    width: 230px;
+  }
+}
+
+
+
+@media ($desktop-widths) {
+  .btn--contact {
+    margin-top: 53px;
+    margin-bottom: 105px;
+  }
 }

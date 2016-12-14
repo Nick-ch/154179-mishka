@@ -1,79 +1,40 @@
 .order-form {
+  margin-bottom: 55px;
+}
+
+.order-form__middle-wrapper {
+  @include container;
   padding: 0 30px;
 }
 
 .order-form__description {
+  margin-bottom: 25px;
+
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
   color: #444444;
 }
 
-.order-form__block {
 
+
+@media ($tablet-widths) {
+  .order-form__description {
+    margin-bottom: 10px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .order-form__outer-wrapper {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
 }
 
-.order-form__block-title {
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: bold;
-  color: $mishka-green;
-  text-transform: uppercase;
-}
-
-.order-form label {
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: bold;
-}
-
-.order-form input,
-.order-form__text-area {
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: normal;
-  color: #444;
-}
-
-.order-form__type-input {
-
-}
-
-.order-form__color-input {
-
-}
-
-.order-form__user-name-label {
-
-}
-
-.order-form__user-name-input {
-
-}
-
-.order-form__user-tel-label {
-
-}
-
-.order-form__user-tel-input {
-
-}
-
-.order-form__user-email-label {
-
-}
-
-.order-form__user-email-input {
-
-}
-
-.order-form__text-area {
-
-}
-
-.order-form__help {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: normal;
-  color: #444;
+@media ($desktop-widths) {
+  .order-form__description {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
 }
