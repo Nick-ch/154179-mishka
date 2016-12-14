@@ -87,47 +87,6 @@
 //*****************
 // Телефон
 //*****************
-.order-form__block--user-tel {
-  position: relative;
-
-  margin-bottom: 30px;
-
-  &::before {
-    content: "";
-
-    display: block;
-    position: absolute;
-    top: 34px;
-    right: 5px;
-
-    width: 25px;
-    height: 25px;
-
-    background-image: url(../../img/icon-phone.svg);
-    background-repeat: no-repeat;
-    opacity: 0.2;
-  }
-}
-
-.order-form__block--user-tel .order-form__block-title {
-  margin-bottom: 5px;
-}
-
-.order-form__user-tel-label {
-
-}
-
-.order-form__user-tel-input {
-  display: block;
-
-  width: 100%;
-
-  padding-top: 17px;
-  padding-bottom: 17px;
-
-  border: none;
-  border-bottom: 2px solid #000;
-}
 
 //------------------------------------
 
