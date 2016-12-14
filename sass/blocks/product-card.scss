@@ -5,37 +5,15 @@
   border: 1px solid #ededed;
 }
 
-.product-card__link {
-
-}
-
-.product-card__link--img {
+.product-card__link-img {
   display: block;
   font-size: 0;
 
   background-color: #e6e6e8; //временно, для видимости разметки
 }
 
-.product-card__link--img img {
+.product-card__link-img img {
   background-color: #e6e6e8;
-}
-
-.product-card__link--cart {
-  font-size: 0;
-
-  &::before {
-    content: "";
-
-    position: absolute;
-    right: 0;
-
-    width: 21px;
-    height: 19px;
-
-    background-image: url(../../img/icon-cart.svg);
-    background-repeat: no-repeat;
-    opacity: 0.2;
-  }
 }
 
 .product-card__wrapper-common {
@@ -78,6 +56,24 @@
   font-weight: bold;
 }
 
+.product-card__link-cart {
+  font-size: 0;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    right: 0;
+
+    width: 21px;
+    height: 19px;
+
+    background-image: url(../../img/icon-cart.svg);
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+}
+
 
 
 @media ($tablet-widths) {
@@ -91,7 +87,7 @@
     margin-bottom: 54px;
   }
 
-  .product-card__link--img {
+  .product-card__link-img {
     flex-grow: 2;
 
     width: 50%;
@@ -140,7 +136,7 @@
     margin-bottom: 57px;
   }
 
-  .product-card__link--img {
+  .product-card__link-img {
     flex-grow: 1;
 
     width: 100%;
