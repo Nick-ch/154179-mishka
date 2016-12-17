@@ -1,12 +1,11 @@
 .reviews {
-  margin-top: 35px;
-  padding-top: 5px;
-  padding-bottom: 45px;
+  margin-top: 52px;
+  margin-bottom: 43px;
 
 }
 
 .reviews__title {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 
   font-size: 25px;
   line-height: 30px;
@@ -21,15 +20,31 @@
 }
 
 .reviews__buttons-wrapper {
+  margin-bottom: 38px;
+  font-size: 0;
+}
 
+.reviews__buttons-wrapper button {
+  padding: 0;
+
+  width: 50%;
+  height: 52px;
+
+  box-sizing: border-box;
+  border: 1px solid #ececec;
+  background-color: #fff;
 }
 
 .reviews__previous-review {
-
+  background-image: url(../../img/icon-left-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .reviews__next-review {
-
+  background-image: url(../../img/icon-right-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 

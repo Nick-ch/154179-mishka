@@ -15,7 +15,9 @@
 
 .shop-links__link {
   display: block;
+
   padding: 30px;
+  padding-top: 25px;
 
   text-decoration: none;
   color: #fff;
@@ -40,7 +42,7 @@
 
   background-image: url(../../img/icon-interior.svg);
   background-repeat: no-repeat;
-  opacity: 0.2; //По макету прозрачность 50% и стоит заливка цветом. Заливку сделать не получается (пробовал fill ставить и в CSS и внутри SVG - не работает). Подобрал прозрачность "на глаз".
+  opacity: 0.2;
 }
 
 .shop-link__text--toys-img::after {

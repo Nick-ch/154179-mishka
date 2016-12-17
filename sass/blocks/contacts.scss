@@ -1,5 +1,5 @@
 .contacts {
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 .contacts__wrapper {
@@ -7,7 +7,7 @@
 }
 
 .contacts__title {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   font-size: 18px;
   line-height: 30px;
@@ -17,6 +17,8 @@
 .contacts__table {
   border-collapse: collapse;
 
+  margin-bottom: 7px;
+
   font-size: 15px;
   line-height: 30px;
   font-weight: normal;
@@ -25,11 +27,11 @@
 
 .contacts__table td {
   padding: 0;
-  padding-bottom: 32px;
+  padding-bottom: 30px;
 }
 
 .contacts__table td:first-child {
-  min-width: 75px;
+  min-width: 78px;
 }
 
 .contacts__table-email-row {
