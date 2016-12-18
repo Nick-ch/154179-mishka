@@ -1,62 +1,35 @@
 .social-btn {
   position: relative;
-
   width: 40px;
   height: 40px;
 
-  margin-left: 20px;
-  margin-right: 20px;
-
   font-size: 0;
-  color: #444444;
 }
 
-.social-btn--instagram::before {
-  content: "";
-
+.social-btn svg {
   position: absolute;
-  left: 9px;
-  transform: translateY(50%);
+  top: 50%;
+  left: 50%;
 
-  width: 22px;
-  height: 22px;
-
-  background-image: url(../../img/icon-insta.svg);
-  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
 }
 
-.social-btn--facebook::before {
-  content: "";
-
-  position: absolute;
-  left: 13px;
-  transform: translateY(25%); //Не пойму, почему 25%, а не 50% нужно ставить для центровки
-
-  width: 15px;
-  height: 28px;
-
-  background-image: url(../../img/icon-fb.svg);
-  background-repeat: no-repeat;
+.social-btn--facebook {
+  margin: 0 20px;
 }
 
-.social-btn--twitter::before {
-  content: "";
+.social-btn:hover path {
+  fill: $mishka-green;
+}
 
-  position: absolute;
-  left: 10px;
-  transform: translateY(50%);
-
-  width: 24px;
-  height: 21px;
-
-  background-image: url(../../img/icon-twitter.svg);
-  background-repeat: no-repeat;
+.social-btn:active {
+  opacity: 0.3;
 }
 
 
 
 @media ($tablet-widths) {
   .social-btn {
-    margin: 0;
+
   }
 }

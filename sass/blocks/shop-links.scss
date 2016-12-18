@@ -26,6 +26,10 @@
   line-height: 24px;
 }
 
+.shop-links__link:active {
+  opacity: 0.3;
+}
+
 .shop-link__text {
   margin-right: 80px;
 }
@@ -67,6 +71,8 @@
     width: 668px;
     margin: 0 auto;
 
+    margin-top: -125px;
+
     font-size: 0;
   }
 
@@ -77,9 +83,22 @@
     vertical-align: middle;
   }
 
+  .shop-links:hover {
+    margin-top: -130px;
+    height: 130px;
+  }
+
   .shop-links__link {
+    padding-top: 28px;
+    padding-bottom: 37px;
+    padding-left: 36px;
+
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .shop-link__text--toys-img::after {
+    right: 33px;
   }
 }
 

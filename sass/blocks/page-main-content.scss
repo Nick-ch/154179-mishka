@@ -21,13 +21,18 @@
 @media ($tablet-widths) {
   .page-main-content__main-page-zigzag {
     position: relative;
-    top: -23px;
+    top: -18px;
 
     height: 24px;
 
     background-image: url(../../img/zigzag-fill-tablet.png);
 
     z-index: 10;
+  }
+
+  .page-main-content__wrapper {
+    margin-top: 0;
+    margin-bottom: 52px;
   }
 
   .page-main-content__inner-page-zigzag {

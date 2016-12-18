@@ -142,6 +142,10 @@
     border-bottom: none;
   }
 
+  .main-nav__item a {
+    padding-left: 78px;
+  }
+
   .main-nav__items--list-1 {
     position: absolute;
     top: 90px;
@@ -160,13 +164,12 @@
   }
 
   .main-nav__items--list-1 a {
-    padding: 20px 0;
+    padding: 16px 0;
     font-size: 15px;
   }
 
   .main-nav__items--list-2 {
-//    float: right;
-//    font-size: 0;
+
   }
 
   .main-nav__items--list-2 .main-nav__item {

@@ -53,8 +53,9 @@
 @media ($tablet-widths) {
   .reviews {
     position: relative;
+
+    margin-bottom: 116px;
     padding-top: 75px;
-    padding-bottom: 100px;
 
     &::before {
       content: "";
@@ -96,6 +97,16 @@
     height: 330px;
 
     margin: 0;
+  }
+
+  .reviews__buttons-wrapper {
+    width: 175px;
+
+    margin-bottom: 0;
+  }
+
+  .reviews__buttons-wrapper button {
+    border: none;
   }
 }
 

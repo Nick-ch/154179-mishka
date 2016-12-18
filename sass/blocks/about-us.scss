@@ -129,44 +129,34 @@
 
 @media ($tablet-widths) {
   .about-us {
-    margin-top: 60px;
+    margin-top: 49px;
     margin-bottom: 80px;
   }
 
   .about-us__title {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
 
     font-size: 43px;
     line-height: 50px;
   }
 
-  .about-us__advantages-list {
+  .about-us__advantages-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    // Не нашел способа сделать правильный порядок и чтобы не было проблем с переполнением. с flex-direction: column нужно ограничивать максимальную высоту, чтобы 2 колонки получить. мб через order задать порядок?
+  }
+
+  .about-us__advantages-list {
+    width: 50%;
   }
 
   .about-us__advantage {
-    width: 40%;
-
-    margin-top: 60px;
-    margin-bottom: 55px;
+    margin-top: 107px;
 
     font-size: 20px;
     line-height: 24px;
   }
 
-  .about-us__advantage:nth-last-child(-n+2) {
-    margin-bottom: 0;
-  }
-
-  .about-us__advantage {
-    &::before {
-      top: -40px;
-
-      transform: translateY(-50%);
-    }
+  .about-us__advantage:first-child {
+    margin-top: 50px;
   }
 }
 

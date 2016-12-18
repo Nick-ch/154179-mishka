@@ -63,7 +63,7 @@
 
 @media ($tablet-widths) {
   .contacts {
-    margin-top: 65px;
+    margin-top: 61px;
   }
 
   .contacts__wrapper {
@@ -71,7 +71,7 @@
   }
 
   .contacts__title {
-    margin-bottom: 45px;
+    margin-bottom: 49px;
 
     font-size: 43px;
     line-height: 50px;
@@ -93,6 +93,9 @@
 
   .contacts__table {
     display: block;
+
+    margin-bottom: 0;
+
     font-size: 17px;
   }
 

@@ -1,4 +1,6 @@
 .page-header {
+  @include container;
+
   position: relative;
   min-height: 78px;
 }
