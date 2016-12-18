@@ -125,7 +125,7 @@
 
     width: 875px;
 
-    margin-top: 80px;
+    margin-top: 71px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 175px;
@@ -145,6 +145,7 @@
     line-height: 57px;
 
     &::after {
+      top: -9px;
       left: -112px;
     }
   }

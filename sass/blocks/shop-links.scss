@@ -106,4 +106,16 @@
   .shop-links {
     width: 1050px;
   }
+
+  .shop-links:hover {
+    height: 140px;
+  }
+
+  .shop-links__link {
+    padding-bottom: 47px;
+  }
+
+  .shop-link__text::after {
+    transform: translateY(-60%);
+  }
 }

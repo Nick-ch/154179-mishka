@@ -164,11 +164,17 @@
 
 @media ($desktop-widths) {
   .about-us {
+    margin-top: 59px;
+    margin-bottom: 86px;
     padding-left: 175px;
   }
 
   .about-us__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .about-us__advantages-wrapper {
+    width: 700px;
   }
 }

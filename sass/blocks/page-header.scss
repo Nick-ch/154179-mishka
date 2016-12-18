@@ -1,5 +1,5 @@
 .page-header {
-  @include container;
+  @include container; //Убрать, когда все будет выровнено по макету
 
   position: relative;
   min-height: 78px;

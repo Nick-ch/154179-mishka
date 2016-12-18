@@ -114,8 +114,11 @@
 
 @media ($desktop-widths) {
   .reviews {
+    margin-bottom: 0;
+    padding-top: 71px;
     padding-left: 175px;
-    padding-bottom: 150px;
+    padding-right: 75px;
+    padding-bottom: 113px;
 
     &::before {
       left: 0;
@@ -125,5 +128,9 @@
   .reviews__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .reviews__buttons {
+    height: 280px;
   }
 }

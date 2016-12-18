@@ -1,4 +1,6 @@
 .page-title {
+  @include container; //Убрать, когда все будет выровнено по макету
+
   position: relative;
   text-align: center;
 
@@ -57,8 +59,10 @@
     padding-right: 50px;
   }
 
-    .page-title--index {
+  .page-title--index {
     min-height: 751px;
+
+    background-position: 50% -2px;
   }
 
   .page-title--form {
@@ -75,7 +79,7 @@
 
   .page-title__delivery-info {
     position: absolute;
-    right: 56px;
+    right: 49px;
 
     margin-top: 17px;
 

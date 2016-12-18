@@ -52,3 +52,11 @@
     font-size: 17px;
   }
 }
+
+
+
+@media ($desktop-widths) {
+  .user-review__text {
+    margin-bottom: 38px;
+  }
+}
