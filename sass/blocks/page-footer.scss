@@ -42,22 +42,14 @@
   color: #000;
 }
 
-.page-footer__developer span {
-  font-size: 0;
+.page-footer__developer svg {
+  position: absolute;
+  top: 23px;
+  right: 39px;
 }
 
-.page-footer__developer a::before {
-  content: "";
-
-  position: absolute;
-  top: 22px;
-  right: 39px;
-
-  width: 27px;
-  height: 35px;
-
-  background-image: url(../../img/logo-htmlacademy.svg);
-  background-repeat: no-repeat;
+.page-footer__developer a:hover path {
+  fill: #46c1ae;
 }
 
 .page-footer__developer a:active {
@@ -92,22 +84,20 @@
   }
 
   .page-footer__developer {
-//    display: block;
-
     width: 191px;
 
     padding: 0;
   }
 
   .page-footer__developer a {
-    padding-top: 29px;
+    padding-top: 22px;
     padding-bottom: 20px;
     padding-left: 8px;
     padding-right: 8px;
   }
 
-  .page-footer__developer a::before {
-    top: 24px;
+  .page-footer__developer svg {
+    top: 17px;
     right: 0;
   }
 }
