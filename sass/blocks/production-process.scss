@@ -83,8 +83,8 @@
   }
 
   .production-process__title-wrapper {
-    padding-top: 40px;
-    padding-left: 42px;
+    padding-top: 38px;
+    padding-left: 45px;
     padding-right: 42px;
   }
 
@@ -108,10 +108,15 @@
     height: 450px; //Хм... Браузер (Хром) отрисовывает на 5пх больше.
   }
 
+  .production-process__video-start {
+    top: 51%;
+  }
+
   .production-process__description-wrapper {
-    padding-top: 10px;
-    padding-left: 42px;
+    padding-top: 12px;
+    padding-left: 40px;
     padding-right: 42px;
+    padding-bottom: 45px;
   }
 
   .production-process__video-description {

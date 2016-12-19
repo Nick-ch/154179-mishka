@@ -83,8 +83,8 @@
 
     min-height: 334px;
 
-    margin-top: 54px;
-    margin-bottom: 54px;
+    margin-top: 0;
+    margin-bottom: 52px;
   }
 
   .product-card__link-img {
@@ -100,6 +100,8 @@
 
     width: 50%;
 
+    padding-top: 26px;
+
     box-sizing: border-box;
   }
 
@@ -114,10 +116,18 @@
 
   .product-card__wrapper-price {
     margin-top: auto;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .product-card__price {
     font-size: 17px;
+  }
+
+  .product-card__link-cart {
+    &::before {
+      right: 3px;
+    }
   }
 }
 
