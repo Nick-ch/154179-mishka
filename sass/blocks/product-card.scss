@@ -143,7 +143,7 @@
     min-height: 659px;
 
     margin: 0;
-    margin-bottom: 57px;
+    margin-bottom: 55px;
   }
 
   .product-card__link-img {
@@ -159,9 +159,17 @@
 
     width: 100%;
     min-height: 197px;
+
+    padding: 26px;
   }
 
   .product-card__description {
     margin-bottom: 0;
+  }
+
+  .product-card__wrapper-price {
+    padding-top: 24px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
