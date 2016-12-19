@@ -19,6 +19,10 @@
 
 
 @media ($tablet-widths) {
+  .order-form {
+    margin-bottom: 50px;
+  }
+
   .order-form__description {
     margin-bottom: 10px;
 
@@ -27,8 +31,7 @@
   }
 
   .order-form__outer-wrapper {
-    padding-top: 50px;
-    padding-bottom: 40px;
+
   }
 }
 
