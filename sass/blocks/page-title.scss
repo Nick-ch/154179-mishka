@@ -1,6 +1,5 @@
 .page-title {
-  @include container; //Убрать, когда все будет выровнено по макету
-
+  @include container;
   position: relative;
   text-align: center;
 

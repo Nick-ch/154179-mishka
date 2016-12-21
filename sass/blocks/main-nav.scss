@@ -151,15 +151,14 @@
     top: 90px;
     left: 50px;
 
+    display: flex;
+
     font-size: 0;
 
     z-index: 10;
   }
 
   .main-nav__items--list-1 .main-nav__item {
-    display: inline-block;
-    vertical-align: top;
-
     margin-right: 35px;
   }
 
@@ -169,12 +168,11 @@
   }
 
   .main-nav__items--list-2 {
-
+    display: flex;
   }
 
   .main-nav__items--list-2 .main-nav__item {
-    display: inline-block;
-    vertical-align: top;
+
   }
 
   .main-nav__items--list-2 a {
@@ -238,7 +236,7 @@
   }
 
   .main-nav__items--list-3 {
-    display: block;
+    display: flex;
     position: absolute;
     top: 90px;
     left: 50px;
@@ -249,8 +247,8 @@
   }
 
   .main-nav__items--list-3 .main-nav__item {
-    display: inline-block;
-    vertical-align: top;
+//    display: inline-block;
+//    vertical-align: top;
 
     margin-right: 62px;
   }
