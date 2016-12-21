@@ -51,6 +51,14 @@
   font-weight: bold;
 }
 
+.page-title--catalog .page-title__slogan {
+  margin-bottom: 0;
+}
+
+.page-title--form .page-title__slogan {
+  margin-bottom: 0;
+}
+
 
 
 @media ($tablet-widths) {
@@ -93,7 +101,7 @@
     width: 668px;
 
     margin-top: 153px;
-    margin-bottom: 372px;
+    margin-bottom: 367px;
 
     font-size: 43px;
     line-height: 50px;
@@ -101,10 +109,12 @@
 
   .page-title--catalog .page-title__slogan {
     margin-top: 95px;
+    margin-bottom: 0;
   }
 
   .page-title--form .page-title__slogan {
     margin-top: 95px;
+    margin-bottom: 0;
   }
 }
 
@@ -117,7 +127,7 @@
 
     margin-left: 100px;
     margin-right: 100px;
-    margin-bottom: 358px;
+    margin-bottom: 353px;
 
     font-size: 53px;
     line-height: 57px;

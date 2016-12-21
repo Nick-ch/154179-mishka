@@ -2,6 +2,14 @@
 //  position: relative;
 }
 
+.page-main-content__outer-wrapper {
+  padding-bottom: 7px;
+
+  background-image: url(../../img/zigzag-line-mobile.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
 .page-main-content__wrapper {
   @include container;
   margin-top: 27px;
@@ -9,11 +17,6 @@
   margin-left: auto;
   margin-right: auto;
 
-}
-
-.page-main-content__content-zigzag {
-  height: 7px;
-  background-image: url(../../img/zigzag-line-mobile.png);
 }
 
 
@@ -30,6 +33,12 @@
     z-index: 10;
   }
 
+  .page-main-content__outer-wrapper {
+    padding-bottom: 16px;
+
+    background-image: url(../../img/zigzag-line-tablet.png);
+  }
+
   .page-main-content__wrapper {
     margin-top: 0;
     margin-bottom: 52px;
@@ -37,18 +46,13 @@
 
   .page-main-content__inner-page-zigzag {
     position: relative;
-    top: -67px;
+    top: -64px;
 
     height: 24px;
 
     background-image: url(../../img/zigzag-fill-tablet.png);
 
     z-index: 10;
-  }
-
-  .page-main-content__content-zigzag {
-    height: 17px;
-    background-image: url(../../img/zigzag-line-tablet.png);
   }
 }
 
@@ -75,8 +79,9 @@
     top: -104px;
   }
 
-  .page-main-content__content-zigzag {
-    height: 23px;
+  .page-main-content__outer-wrapper {
+    padding-bottom: 24px;
+
     background-image: url(../../img/zigzag-line-desktop.png);
   }
 }
