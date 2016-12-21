@@ -2,6 +2,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  text-align: left;
 }
 
 .shop-links__item {
@@ -66,26 +68,23 @@
 
 @media ($tablet-widths) {
   .shop-links {
-    display: table;
+    display: flex;
 
     width: 668px;
     margin: 0 auto;
-
-    margin-top: -125px;
 
     font-size: 0;
   }
 
   .shop-links__item {
-    display: table-cell;
     width: 50%;
 
-    vertical-align: middle;
-  }
+    margin-top: 5px;
 
-  .shop-links:hover {
-    margin-top: -130px;
-    height: 130px;
+    &:hover {
+      margin-top: 0;
+      padding-bottom: 5px;
+    }
   }
 
   .shop-links__link {
@@ -105,10 +104,6 @@
 @media ($desktop-widths) {
   .shop-links {
     width: 1050px;
-  }
-
-  .shop-links:hover {
-    height: 140px;
   }
 
   .shop-links__link {
