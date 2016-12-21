@@ -1,4 +1,5 @@
 .page-header {
+//  @include container;
   min-height: 78px;
 
   border-top: 1px solid #ececec;
@@ -17,11 +18,11 @@
   margin-left: auto;
   margin-right: auto;
 
-  &:hover[href="index.html"] {
+  &:hover[href] {
     opacity: 0.6;
   }
 
-  &:active[href="index.html"] {
+  &:active[href] {
     opacity: 0.3;
   }
 }
@@ -41,10 +42,6 @@
   background-image: url(../../img/icon-menu-open.svg);
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.page-header__toggle--nojs {
-  display: none;
 }
 
 .page-header__items {
@@ -161,7 +158,7 @@
   }
 
   .page-header__wrapper--opened {
-    margin-bottom: -317px;
+    margin-bottom: -327px;
   }
 
   .page-header__wrapper--opened .page-header__items--list-2 {
@@ -185,7 +182,93 @@
 
 
 @media ($tablet-widths) {
+  .page-header {
+    min-height: 88px;
 
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .page-header__wrapper {
+    margin-bottom: -78px;
+  }
+
+  .page-header__logo {
+    margin: 0;
+
+    order: -2;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__items {
+    flex-wrap: nowrap;
+
+    width: auto;
+
+    border: none;
+    background-color: transparent;
+  }
+
+  .page-header__items--list-1 {
+    width: 100%;
+  }
+
+  .page-header__items--list-2 {
+    order: -1;
+  }
+
+  .page-header__item {
+    min-height: auto;
+    border: none;
+  }
+
+  .page-header__items--list-1 .page-header__item {
+    width: 167px;
+    height: 58px;
+
+    font-size: 15px;
+  }
+
+  .page-header__items--list-1 a {
+    margin-left: 0;
+  }
+
+  .page-header__items--list-2 {
+    margin-left: auto;
+  }
+
+  .page-header__items--list-2 .page-header__item {
+    width: auto;
+    height: 88px;
+  }
+
+  .page-header__items--list-2 a {
+  }
+
+  .page-header__items--list-2 .page-header__search {
+    margin-left: 0;
+
+    font-size: 0;
+
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+  }
+
+  .page-header__search svg {
+    margin-left: 34px;
+    margin-right: 30px;
+  }
+
+  .page-header__items--list-2 .page-header__shop-cart {
+    margin-left: 32px;
+  }
+
+  .page-header__shop-cart svg{
+    margin-right: 30px;
+  }
 }
 
 
