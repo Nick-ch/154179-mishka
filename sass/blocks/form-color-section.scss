@@ -95,7 +95,7 @@
   .form-color-section {
     margin-bottom: 0;
     padding-top: 65px;
-    padding-bottom: 65px;
+    padding-bottom: 66px;
 
     background-color: #f1f1f1;
   }
@@ -121,10 +121,10 @@
   }
 
   .form-color-section__input + label {
-    width: 50%;
+    width: 235px;
 
     padding-left: 80px;
-    margin-bottom: 60px;
+    margin-bottom: 59px;
 
     font-size: 19px;
 
@@ -137,6 +137,10 @@
       width: 50px;
       height: 50px;
     }
+  }
+
+  .form-color-section__inner-wrapper label:nth-of-type(odd) {
+    width: 262px;
   }
 
   .form-color-section__input:checked + label {
@@ -166,7 +170,7 @@
   }
 
   .form-color-section__inner-wrapper {
-    width: 875px;
+    width: 823px;
   }
 
   .form-color-section__input + label {

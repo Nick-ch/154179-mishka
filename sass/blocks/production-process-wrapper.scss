@@ -1,6 +1,6 @@
 .production-process-wrapper {
   @include container;
-  margin-bottom: 58px;
+  margin-bottom: 56px;
 }
 
 @media ($tablet-widths) {
@@ -11,6 +11,6 @@
 
 @media ($desktop-widths) {
   .production-process-wrapper {
-    margin-bottom: 105px;
+    margin-bottom: 103px;
   }
 }

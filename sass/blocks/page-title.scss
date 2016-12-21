@@ -1,4 +1,5 @@
 .page-title {
+//  @include container;
   position: relative;
   text-align: center;
 
@@ -6,25 +7,25 @@
 }
 
 .page-title--index {
-  min-height: 280px;
+  min-height: 282px;
 
   background-image: url(../../img/hero-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-color: #fafafa;
-  background-position: 50% -25px;
+  background-position: 50% -18px;
   background-size: cover;
 }
 
 .page-title--form {
-  min-height: 180px;
+  min-height: 176px;
 
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   background-color: #f1f1f1;
 }
 
 .page-title--catalog {
-  min-height: 180px;
+  min-height: 176px;
 
   margin-bottom: 30px;
 
@@ -42,11 +43,20 @@
   clear: both;
   width: 260px;
 
-  margin-top: 75px;
+  margin-top: 70px;
+  margin-bottom: 122px;
 
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
+}
+
+.page-title--catalog .page-title__slogan {
+  margin-bottom: 0;
+}
+
+.page-title--form .page-title__slogan {
+  margin-bottom: 0;
 }
 
 
@@ -57,27 +67,29 @@
     padding-right: 50px;
   }
 
-    .page-title--index {
-    min-height: 630px;
+  .page-title--index {
+    min-height: 751px;
+
+    background-position: 50% -2px;
   }
 
   .page-title--form {
-    min-height: 220px;
+    min-height: 228px;
 
-    margin-bottom: 85px;
+    margin-bottom: 45px;
   }
 
   .page-title--catalog {
-    min-height: 220px;
+    min-height: 228px;
 
-    margin-bottom: 85px;
+    margin-bottom: 51px;
   }
 
   .page-title__delivery-info {
     position: absolute;
-    right: 50px;
+    right: 49px;
 
-    margin-top: 21px;
+    margin-top: 17px;
 
     font-size: 15px;
     line-height: 24px;
@@ -88,18 +100,21 @@
   .page-title__slogan {
     width: 668px;
 
-    margin-top: 150px;
+    margin-top: 153px;
+    margin-bottom: 367px;
 
     font-size: 43px;
     line-height: 50px;
   }
 
   .page-title--catalog .page-title__slogan {
-    margin-top: 80px;
+    margin-top: 95px;
+    margin-bottom: 0;
   }
 
   .page-title--form .page-title__slogan {
-    margin-top: 80px;
+    margin-top: 95px;
+    margin-bottom: 0;
   }
 }
 
@@ -112,16 +127,19 @@
 
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 353px;
 
     font-size: 53px;
     line-height: 57px;
   }
 
   .page-title--catalog {
-    margin-bottom: 140px;
+    min-height: 256px;
+    margin-bottom: 92px;
   }
 
   .page-title--form {
-    margin-bottom: 140px;
+    margin-bottom: 85px;
+    min-height: 256px;
   }
 }

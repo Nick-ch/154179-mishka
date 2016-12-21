@@ -1,28 +1,87 @@
 .page-main-content {
+//  position: relative;
+}
 
+.page-main-content__outer-wrapper {
+  padding-bottom: 7px;
+
+  background-image: url(../../img/zigzag-line-mobile.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
 }
 
 .page-main-content__wrapper {
   @include container;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 27px;
+  margin-bottom: 35px;
   margin-left: auto;
   margin-right: auto;
 
 }
 
-.page-main-content__decoration-border {
-  border-bottom: 3px solid #f1f1f1; // Потом сделаю волнистую линию.  Пока не знаю как.
-}
+
 
 @media ($tablet-widths) {
-  .page-main-content__decoration-border {
-    border-bottom: 6px solid #f1f1f1;
+  .page-main-content__main-page-zigzag {
+    position: relative;
+    top: -18px;
+
+    height: 24px;
+
+    background-image: url(../../img/zigzag-fill-tablet.png);
+
+    z-index: 10;
+  }
+
+  .page-main-content__outer-wrapper {
+    padding-bottom: 16px;
+
+    background-image: url(../../img/zigzag-line-tablet.png);
+  }
+
+  .page-main-content__wrapper {
+    margin-top: 0;
+    margin-bottom: 52px;
+  }
+
+  .page-main-content__inner-page-zigzag {
+    position: relative;
+    top: -64px;
+
+    height: 24px;
+
+    background-image: url(../../img/zigzag-fill-tablet.png);
+
+    z-index: 10;
   }
 }
 
+
+
 @media ($desktop-widths) {
-  .page-main-content__decoration-border {
-    border-bottom: 9px solid #f1f1f1;
+  .page-main-content__main-page-zigzag {
+    top: -33px;
+
+    height: 34px;
+
+    background-image: url(../../img/zigzag-fill-desktop.png);
+  }
+
+  .page-main-content__inner-page-zigzag {
+    top: -113px;
+
+    height: 34px;
+
+    background-image: url(../../img/zigzag-fill-desktop.png);
+  }
+
+  .page-main-content__inner-page-zigzag--form {
+    top: -104px;
+  }
+
+  .page-main-content__outer-wrapper {
+    padding-bottom: 24px;
+
+    background-image: url(../../img/zigzag-line-desktop.png);
   }
 }

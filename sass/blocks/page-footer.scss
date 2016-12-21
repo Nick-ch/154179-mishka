@@ -23,11 +23,6 @@
 }
 
 .page-footer__developer {
-  padding-right: 50px;
-  padding-left: 40px;
-  padding-top: 27px;
-  padding-bottom: 27px;
-
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
@@ -35,21 +30,30 @@
 
 .page-footer__developer a {
   position: relative;
-  font-size: 0;
+
+  display: block;
+
+  padding-right: 39px;
+  padding-left: 38px;
+  padding-top: 28px;
+  padding-bottom: 27px;
+
+  text-decoration: none;
+  color: #000;
 }
 
-.page-footer__developer a::before {
-  content: "";
-
+.page-footer__developer svg {
   position: absolute;
-  left: 15px;
-  transform: translateY(-25%);
+  top: 23px;
+  right: 39px;
+}
 
-  width: 40px;
-  height: 40px;
+.page-footer__developer a:hover path {
+  fill: #46c1ae;
+}
 
-  background-image: url(../../img/htmlacademy.svg);
-  background-repeat: no-repeat;
+.page-footer__developer a:active {
+  opacity: 0.3;
 }
 
 
@@ -80,9 +84,20 @@
   }
 
   .page-footer__developer {
-    display: block;
-    width: 185px;
-    padding-left: 0;
-    padding-right: 0;
+    width: 191px;
+
+    padding: 0;
+  }
+
+  .page-footer__developer a {
+    padding-top: 22px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .page-footer__developer svg {
+    top: 17px;
+    right: 0;
   }
 }
