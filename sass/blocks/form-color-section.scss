@@ -64,6 +64,18 @@
 
     border: 2px solid #444;
   }
+
+  &:hover {
+    &::before {
+      border-color: $mishka-green;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: #f1f1f1;
+    }
+  }
 }
 
 .form-color-section__input:checked + label {

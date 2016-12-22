@@ -9,6 +9,11 @@
 .shop-links__item {
   position: relative;
   background: $mishka-green;
+
+  &:hover {
+    margin-top: -5px;
+    padding-bottom: 5px;
+  }
 }
 
 .shop-links__item--darker {

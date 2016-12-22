@@ -68,7 +68,18 @@
 
   .page-footer__logo {
     display: block;
-    width: 185px;
+
+    margin-right: 84px;
+  }
+
+  .page-footer__logo[href] svg {
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .page-footer__social-links {

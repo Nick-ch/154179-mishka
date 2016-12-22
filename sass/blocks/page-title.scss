@@ -1,9 +1,12 @@
 .page-title {
-//  @include container;
   position: relative;
   text-align: center;
-
   font-size: 0;
+}
+
+.page-title__wrapper {
+  position: relative;
+  @include container-menu;
 }
 
 .page-title--index {
@@ -12,8 +15,12 @@
   background-image: url(../../img/hero-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-color: #fafafa;
-  background-position: 50% -18px;
-  background-size: cover;
+  background-position: center -25px;
+  background-size: auto 380px;
+
+  @media #{$retina} {
+    background-image: url(../../img/hero-mobile@2x.jpg);
+  }
 }
 
 .page-title--form {
@@ -63,31 +70,52 @@
 
 @media ($tablet-widths) {
   .page-title {
-    padding-left: 50px;
-    padding-right: 50px;
+    &:after {
+      content: "";
+
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      right: 0;
+
+      height: 24px;
+      width: 100%;
+
+      background-image: url(../../img/bg-zigzag-fill.svg);
+      background-repeat: repeat-x;
+      background-size: auto 24px;
+
+      z-index: 100;
+    }
   }
 
   .page-title--index {
     min-height: 751px;
 
-    background-position: 50% -2px;
+    background-image: url(../../img/hero-desktop@1x.jpg);
+    background-position: center -5px;
+    background-size: cover;
+
+    @media #{$retina} {
+      background-image: url(../../img/hero-desktop@2x.jpg);
+    }
   }
 
   .page-title--form {
     min-height: 228px;
 
-    margin-bottom: 45px;
+    margin-bottom: 68px;
   }
 
   .page-title--catalog {
     min-height: 228px;
 
-    margin-bottom: 51px;
+    margin-bottom: 75px;
   }
 
   .page-title__delivery-info {
     position: absolute;
-    right: 49px;
+    right: 0;
 
     margin-top: 17px;
 
@@ -121,6 +149,24 @@
 
 
 @media ($desktop-widths) {
+  .page-title {
+    &:after {
+      bottom: -1px;
+
+      height: 34px;
+      background-size: auto 34px;
+    }
+  }
+
+  .page-title--index {
+    background-image: url(../../img/hero-desktop@1x.jpg);
+    background-position: center -3px;
+    background-size: contain;
+
+    @media #{$retina} {
+      background-image: url(../../img/hero-desktop@2x.jpg);
+    }
+  }
 
   .page-title__slogan {
     width: 700px;
@@ -135,11 +181,19 @@
 
   .page-title--catalog {
     min-height: 256px;
-    margin-bottom: 92px;
+    margin-bottom: 125px;
+
+    &:after {
+      bottom: -12px;
+    }
   }
 
   .page-title--form {
-    margin-bottom: 85px;
+    margin-bottom: 118px;
     min-height: 256px;
+
+    &:after {
+      bottom: -12px;
+    }
   }
 }

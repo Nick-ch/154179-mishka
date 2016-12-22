@@ -19,3 +19,16 @@
     width: 1050px;
   }
 }
+
+@mixin container-menu {
+  width: 320px;
+  margin: 0 auto;
+
+  @media ($tablet-widths) {
+    width: 668px;
+  }
+
+  @media ($desktop-widths) {
+    width: 1050px;
+  }
+}

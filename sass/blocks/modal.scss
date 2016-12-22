@@ -24,7 +24,7 @@
 
   background-color: #fff;
 
-  z-index: 20;
+  z-index: 1000;
 }
 
 .modal--displayed {
@@ -80,6 +80,10 @@
   font-weight: bold;
   text-transform: uppercase;
   color: #444;
+
+  &:hover {
+    border-color: #c7c7c7;
+  }
 }
 
 .modal__input:checked + .modal__label {
@@ -91,13 +95,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
 
   width: 100%;
   height: 100%;
 
   background-color: #fff;
   opacity: 0.9;
+
+  z-index: 999;
 }
 
 .modal__overlay--displayed {

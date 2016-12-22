@@ -1,5 +1,13 @@
 .production-process {
   border: 1px solid #ededed;
+
+  &:hover {
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .production-process__title-wrapper {
@@ -7,7 +15,7 @@
 
   padding: 30px;
   padding-top: 25px;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 }
 
 .production-process__title {
@@ -38,7 +46,11 @@
 }
 
 .production-process__video {
+  display: block;
 
+  width: 260px;
+  height: 150px;
+  background-color: #e5e5e5;
 }
 
 .production-process__video-start {
@@ -62,7 +74,7 @@
 
 .production-process__description-wrapper {
   padding: 34px;
-  padding-top: 25px;
+  padding-top: 27px;
 }
 
 .production-process__video-description {
@@ -100,12 +112,11 @@
 
   .production-process__video-wrapper {
     order: -1;
-
-    background-color: #e5e5e5; //временно, для видимости разметки
   }
 
-  .production-process__video-wrapper video {
-    height: 450px; //Хм... Браузер (Хром) отрисовывает на 5пх больше.
+  .production-process__video {
+    width: 668px;
+    height: 455px;
   }
 
   .production-process__video-start {
@@ -156,6 +167,10 @@
 
   .production-process__video-wrapper {
     float: left;
+    width: 682px;
+  }
+
+  .production-process__video {
     width: 682px;
   }
 
