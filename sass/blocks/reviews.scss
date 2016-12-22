@@ -39,12 +39,28 @@
   background-image: url(../../img/icon-left-arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__next-review {
   background-image: url(../../img/icon-right-arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 
@@ -68,9 +84,14 @@
 
       background-image: url(../../img/review@1x.jpg);
       background-repeat: no-repeat;
-      background-color: f5f5f5;
+      background-color: #f5f5f5;
 
       z-index: -100;
+
+      @media #{$retina} {
+        background-image: url(../../img/review@2x.jpg);
+        background-size: contain;
+      }
     }
   }
 

@@ -55,6 +55,14 @@
   border: 2px solid #444;
 
   resize: vertical;
+
+  &:hover {
+    border-color: $mishka-green;
+  }
+
+  &:focus {
+    border-color: $mishka-green;
+  }
 }
 
 .form-text-area-section__btn-wrapper {

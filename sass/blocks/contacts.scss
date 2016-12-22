@@ -43,6 +43,15 @@
   text-decoration: none;
   color: #444444;
   border-bottom: 1px solid $mishka-green;
+
+  &:hover {
+    color: $mishka-green;
+  }
+
+  &:active {
+    color: $mishka-green;
+    opacity: 0.3;
+  }
 }
 
 .contacts__map {
