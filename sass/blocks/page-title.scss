@@ -1,6 +1,6 @@
 .page-title {
+  position: relative;
   text-align: center;
-
   font-size: 0;
 }
 
@@ -66,8 +66,23 @@
 
 @media ($tablet-widths) {
   .page-title {
-    padding-left: 50px;
-    padding-right: 50px;
+    &:after {
+      content: "";
+
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      right: 0;
+
+      height: 24px;
+      width: 100%;
+
+      background-image: url(../../img/bg-zigzag-fill.svg);
+      background-repeat: repeat-x;
+      background-size: auto 24px;
+
+      z-index: 100;
+    }
   }
 
   .page-title--index {
@@ -79,13 +94,13 @@
   .page-title--form {
     min-height: 228px;
 
-    margin-bottom: 45px;
+    margin-bottom: 68px;
   }
 
   .page-title--catalog {
     min-height: 228px;
 
-    margin-bottom: 51px;
+    margin-bottom: 75px;
   }
 
   .page-title__delivery-info {
@@ -124,6 +139,14 @@
 
 
 @media ($desktop-widths) {
+  .page-title {
+    &:after {
+      bottom: -1px;
+
+      height: 34px;
+      background-size: auto 34px;
+    }
+  }
 
   .page-title__slogan {
     width: 700px;
@@ -138,11 +161,19 @@
 
   .page-title--catalog {
     min-height: 256px;
-    margin-bottom: 92px;
+    margin-bottom: 125px;
+
+    &:after {
+      bottom: -12px;
+    }
   }
 
   .page-title--form {
-    margin-bottom: 85px;
+    margin-bottom: 118px;
     min-height: 256px;
+
+    &:after {
+      bottom: -12px;
+    }
   }
 }
