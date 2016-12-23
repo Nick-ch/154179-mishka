@@ -1,7 +1,3 @@
-.form-text-area-section {
-
-}
-
 .form-text-area-section__container {
   @include container;
 }
@@ -35,10 +31,6 @@
   }
 }
 
-.form-text-area-section__inner-wrapper {
-
-}
-
 .form-text-area-section__text-area {
   width: 260px;
   height: 142px;
@@ -63,10 +55,6 @@
   &:focus {
     border-color: $mishka-green;
   }
-}
-
-.form-text-area-section__btn-wrapper {
-
 }
 
 .form-text-area-section__help {
