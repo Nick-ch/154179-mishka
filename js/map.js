@@ -1,3 +1,3 @@
-var map = document.querySelector(".contacts__map");
+var map = document.querySelector(".map");
 
 map.classList.remove("map--nojs");
