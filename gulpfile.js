@@ -67,11 +67,20 @@ gulp.task("serve", function () {
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("*.html", ["copy-html"]).on("change", server.reload);
 });
 
 gulp.task("clean", function() {
   return del("build");
+});
+
+gulp.task("copy-html", function () {
+  return gulp.src([
+    "*.html"
+  ], {
+    base: "."
+  })
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("copy", function () {
