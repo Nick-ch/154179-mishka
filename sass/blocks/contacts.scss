@@ -54,10 +54,6 @@
   }
 }
 
-.contacts__map {
-
-}
-
 
 
 @media ($tablet-widths) {
@@ -145,10 +141,5 @@
   .contacts__email-section,
   .contacts__adress-section {
     width: auto;
-  }
-
-  .contacts__map {
-    float: right;
-    width: 525px;
   }
 }

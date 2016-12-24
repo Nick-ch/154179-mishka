@@ -47,10 +47,6 @@
   }
 }
 
-.form-user-contacts-section__inner-wrapper {
-
-}
-
 .form-user-contacts-section__tel-input {
   position: relative;
   display: block;
@@ -205,6 +201,16 @@
 
     background-color: #f1f1f1;
   }
+
+  .form-user-contacts-section__tel-input +svg {
+    top: 17px;
+    right: 26px;
+  }
+
+  .form-user-contacts-section__email-input +svg {
+    top: 16px;
+    right: 22px;
+  }
 }
 
 
@@ -236,5 +242,14 @@
 
   .form-user-contacts-section__email-input {
     width: 700px;
+  }
+
+  .form-user-contacts-section__tel-input +svg {
+    right: 181px;
+  }
+
+  .form-user-contacts-section__email-input +svg {
+    top: 16px;
+    right: 178px;
   }
 }

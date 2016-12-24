@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <header class="page-header">
@@ -146,7 +147,7 @@
           </div>
           <div class="production-process__description-wrapper">
             <p class="production-process__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <a href="form.html" class="btn btn--place-order">Сделать заказ</a>
+            <a href="form.html" class="btn">Сделать заказ</a>
           </div>
         </article>
       </div>
@@ -207,9 +208,9 @@
         </div>
       </div>
     </footer>
-    <section class="modal  modal--add-to-cart">
+    <section class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
-      <form class="modal__form" action="#" method="get">
+      <form action="#" method="get">
         <p class="modal__description">Выберите размер:</p>
         <div class="modal__form-inner-wrap">
           <input class="modal__input" id="input-size-01" type="radio" name="input-size">
