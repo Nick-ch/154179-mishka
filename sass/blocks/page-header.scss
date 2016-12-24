@@ -5,6 +5,10 @@
   border-bottom: 1px solid #ececec;
 }
 
+body .page-header--nojs {
+  height: auto;
+}
+
 .page-header__wrapper {
   @include container-menu;
 

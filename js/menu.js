@@ -1,7 +1,8 @@
 var headerWrap = document.querySelector(".page-header__wrapper");
 var navToggle = document.querySelector(".page-header__toggle");
+var header = document.querySelector(".page-header");
 
-
+header.classList.remove("page-header--nojs");
 headerWrap.classList.remove("page-header__wrapper--nojs");
 headerWrap.classList.remove("page-header__wrapper--opened");
 navToggle.classList.remove("page-header__toggle--nojs");

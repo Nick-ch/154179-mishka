@@ -28,7 +28,7 @@
   font-weight: bold;
 }
 
-.page-footer__developer a {
+.page-footer__developer-link {
   position: relative;
 
   display: block;
@@ -42,17 +42,17 @@
   color: #000;
 }
 
-.page-footer__developer svg {
+.page-footer__developer-link svg {
   position: absolute;
   top: 23px;
   right: 39px;
 }
 
-.page-footer__developer a:hover path {
+.page-footer__developer-link:hover path {
   fill: #46c1ae;
 }
 
-.page-footer__developer a:active {
+.page-footer__developer-link:active {
   opacity: 0.3;
 }
 
@@ -100,14 +100,14 @@
     padding: 0;
   }
 
-  .page-footer__developer a {
+  .page-footer__developer-link {
     padding-top: 22px;
     padding-bottom: 20px;
     padding-left: 8px;
     padding-right: 8px;
   }
 
-  .page-footer__developer svg {
+  .page-footer__developer-link svg {
     top: 17px;
     right: 0;
   }
