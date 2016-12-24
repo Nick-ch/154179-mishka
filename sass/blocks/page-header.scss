@@ -1,5 +1,5 @@
 .page-header {
-  min-height: 78px;
+  height: 78px;
 
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
@@ -71,7 +71,7 @@
   align-items: center;
 
   width: 100%;
-  min-height: 78px;
+  height: 78px;
 
   font-size: 17px;
   line-height: 24px;
@@ -177,7 +177,7 @@
 
 @media ($tablet-widths) {
   .page-header {
-    min-height: 88px;
+    height: 88px;
 
     padding-left: 50px;
     padding-right: 50px;
@@ -215,7 +215,7 @@
   }
 
   .page-header__item {
-    min-height: auto;
+    height: auto;
     border: none;
   }
 
