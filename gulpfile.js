@@ -59,7 +59,7 @@ gulp.task("icon-sprite", function () {
 
 gulp.task("serve", function () {
   server.init({
-    server: "build",
+    server: ".",
     notify: false,
     open: true,
     cors: true,
@@ -67,7 +67,7 @@ gulp.task("serve", function () {
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html", ["copy-html"]).on("change", server.reload);
+  gulp.watch("*.html").on("change", server.reload);
 });
 
 gulp.task("clean", function() {
