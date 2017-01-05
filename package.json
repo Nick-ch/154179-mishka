@@ -24,7 +24,8 @@
   "scripts": {
     "test": "editorconfig-cli",
     "build": "gulp build",
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "deploy": "gulp deploy"
   },
   "editorconfig-cli": [
     "*.html",
