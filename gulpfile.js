@@ -14,6 +14,7 @@ var svgmin = require("gulp-svgmin");
 var svgstore = require("gulp-svgstore");
 var run = require("run-sequence");
 var del = require("del");
+var ghPages = require("gulp-gh-pages");
 
 gulp.task("style", function () {
   gulp.src("sass/style.scss")
@@ -127,4 +128,9 @@ gulp.task("build", function (fn) {
     "icon-sprite",
     fn
   );
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
