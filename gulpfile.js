@@ -38,6 +38,29 @@ gulp.task("style", function () {
     .pipe(server.stream());
 });
 
+gulp.task("style-project", function () {
+  gulp.src("sass/style.scss")
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer({browsers: [
+        "last 1 version",
+        "last 2 Chrome versions",
+        "last 2 Firefox versions",
+        "last 2 Opera versions",
+        "last 2 Edge versions"
+      ]}),
+      mqpacker({
+        sort: true
+      })
+    ]))
+    .pipe(gulp.dest("css"))
+    .pipe(minify())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("css"))
+    .pipe(server.stream());
+});
+
 gulp.task("images", function () {
   return gulp.src("build/img/**/*.{png,jpg,gif}")
     .pipe(imagemin([
@@ -66,7 +89,7 @@ gulp.task("serve", function () {
     ui: false
   });
 
-  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch("sass/**/*.{scss,sass}", ["style-project"]);
   gulp.watch("*.html").on("change", server.reload);
 });
 
