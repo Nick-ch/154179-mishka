@@ -33,7 +33,7 @@
 }
 
 .reviews__previous-review {
-  background-image: url(../../img/icon-left-arrow.svg);
+  background-image: url(../img/icon-left-arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -47,7 +47,7 @@
 }
 
 .reviews__next-review {
-  background-image: url(../../img/icon-right-arrow.svg);
+  background-image: url(../img/icon-right-arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -79,14 +79,14 @@
       width: 350px;
       height: 457px;
 
-      background-image: url(../../img/review@1x.jpg);
+      background-image: url(../img/review@1x.jpg);
       background-repeat: no-repeat;
       background-color: #f5f5f5;
 
       z-index: -100;
 
       @media #{$retina} {
-        background-image: url(../../img/review@2x.jpg);
+        background-image: url(../img/review@2x.jpg);
         background-size: contain;
       }
     }
