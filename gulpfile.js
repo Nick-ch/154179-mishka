@@ -129,8 +129,3 @@ gulp.task("build", function (fn) {
     fn
   );
 });
-
-gulp.task("deploy", function() {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages());
-});
